@@ -1,0 +1,1905 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    
+<title>Tech House
+</title>
+                
+        
+<link rel="shortcut icon" href="https://app.marketingblocks.ai/image/favico.png">
+        
+<meta charset="utf-8">
+    
+<meta name="description" content="">
+    
+<meta name="referrer" content="origin-when-crossorigin" id="meta_referrer">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<meta name="csrf-token" content="{{ csrf_token() }}">
+
+<link href="https://app.marketingblocks.ai/css/app.css" rel="stylesheet">
+
+    
+<link rel="stylesheet" type="text/css" href="./css/animations.css" rel="stylesheet">
+    
+<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    
+<link rel="stylesheet" type="text/css" href="./css/layout-editor.css">
+    
+<link rel="stylesheet" type="text/css" href="./css/color.css">
+    
+<link rel="stylesheet" type="text/css" href="./css/editor.css">
+    
+<link rel="stylesheet" type="text/css" href="./css/section.css">
+    
+<link rel="stylesheet" type="text/css" href="./css/elements.css">
+    
+<link rel="stylesheet" type="text/css" href="./css/ci-layout.css">
+    
+<link rel="stylesheet" type="text/css" href="./css/jquery.toast.min.css">
+    
+<link rel="stylesheet" type="text/css" href="./css/slick.css">
+    
+<link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+    
+<link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
+    
+    
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     
+<link href="https://fonts.googleapis.com/css?family=sans-serif:700,700italic|Abel:regular|Acme:regular|Advent+Pro:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Aguafina+Script:regular|Alex+Brush:regular|Allan:regular,700|Amatic+SC:regular,700|Amiri:regular,italic,700,700italic|Anton:regular|Archivo+Black:regular|Archivo+Narrow:regular,500,600,700,italic,500italic,600italic,700italic|Arimo:regular,500,600,700,italic,500italic,600italic,700italic|Arizonia:regular|Arvo:regular,italic,700,700italic|Audiowide:regular|Bad+Script:regular|Baloo+2:regular,500,600,700,800|Barlow:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Barlow+Condensed:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Barlow+Semi+Condensed:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Bebas+Neue:regular|Bellota:300,300italic,regular,italic,700,700italic|BioRhyme:200,300,regular,700,800|Bitter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Bree+Serif:regular|Bungee+Inline:regular|Cabin:regular,500,600,700,italic,500italic,600italic,700italic|Cabin+Condensed:regular,500,600,700|Carter+One:regular|Caveat:regular,500,600,700|Cedarville+Cursive:regular|Cinzel:regular,500,600,700,800,900|Comfortaa:300,regular,500,600,700|Cookie:regular|Cormorant:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic|Cormorant+Garamond:300,300italic,regular,italic,500,500italic,600,600italic,700,700italic|Cormorant+Infant:300,300italic,regular,italic,500,500italic,600,600italic,700,700italic|Cormorant+SC:300,regular,500,600,700|Cormorant+Unicase:300,regular,500,600,700|Courgette:regular|Crimson+Text:regular,italic,600,600italic,700,700italic|Damion:regular|Dancing+Script:regular,500,600,700|Didact+Gothic:regular|Dosis:200,300,regular,500,600,700,800|EB+Garamond:regular,500,600,700,800,italic,500italic,600italic,700italic,800italic|Encode+Sans:100,200,300,regular,500,600,700,800,900|Encode+Sans+Condensed:100,200,300,regular,500,600,700,800,900|Encode+Sans+Expanded:100,200,300,regular,500,600,700,800,900|Encode+Sans+Semi+Condensed:100,200,300,regular,500,600,700,800,900|Encode+Sans+Semi+Expanded:100,200,300,regular,500,600,700,800,900|Ewert:regular|Exo+2:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Faster+One:regular|Fira+Mono:regular,500,700|Fira+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Fjalla+One:regular|Fondamento:regular,italic|Galada:regular|Gloria+Hallelujah:regular|Gochi+Hand:regular|Gotu:regular|Great+Vibes:regular|Handlee:regular|Hind:300,regular,500,600,700|Hind+Guntur:300,regular,500,600,700|Hind+Madurai:300,regular,500,600,700|Hind+Siliguri:300,regular,500,600,700|Hind+Vadodara:300,regular,500,600,700|Homemade+Apple:regular|Inconsolata:200,300,regular,500,600,700,800,900|Indie+Flower:regular|Inter:100,200,300,regular,500,600,700,800,900|Istok+Web:regular,italic,700,700italic|Josefin+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic|Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Kalam:300,regular,700|Kanit:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Karla:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic|Kaushan+Script:regular|Kelly+Slab:regular|Kite+One:regular|Knewave:regular|Kristi:regular|Krona+One:regular|Lalezar:regular|Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic|League+Gothic:regular|Leckerli+One:regular|Lekton:regular,italic,700|Lexend:100,200,300,regular,500,600,700,800,900|Lexend+Deca:100,200,300,regular,500,600,700,800,900|Lexend+Exa:100,200,300,regular,500,600,700,800,900|Lexend+Giga:100,200,300,regular,500,600,700,800,900|Lexend+Mega:100,200,300,regular,500,600,700,800,900|Lexend+Peta:100,200,300,regular,500,600,700,800,900|Lexend+Tera:100,200,300,regular,500,600,700,800,900|Lexend+Zetta:100,200,300,regular,500,600,700,800,900|Libre+Baskerville:regular,italic,700|Libre+Franklin:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Lobster:regular|Lobster+Two:regular,italic,700,700italic|Lora:regular,500,600,700,italic,500italic,600italic,700italic|Manrope:200,300,regular,500,600,700,800|Marck+Script:regular|Marmelad:regular|Maven+Pro:regular,500,600,700,800,900|Merriweather:300,300italic,regular,italic,700,700italic,900,900italic|Merriweather+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic|Monoton:regular|Montez:regular|Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Montserrat+Alternates:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap" rel="stylesheet" type='text/css'>
+   
+    
+<link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:regular,700|Mr+Dafoe:regular|Mulish:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|News+Cycle:regular,700|Niconne:regular|Niramit:200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic|Nobile:regular,italic,500,500italic,700,700italic|Norican:regular|Notable:regular|Noto+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Noto+Sans+JP:100,300,regular,500,700,900|Noto+Serif:regular,italic,700,700italic|Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Nunito+Sans:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic|Old+Standard+TT:regular,italic,700|Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic|Orbitron:regular,500,600,700,800,900|Oswald:200,300,regular,500,600,700|Overpass:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Overpass+Mono:300,regular,500,600,700|Oxygen:300,regular,700|Oxygen+Mono:regular|PT+Sans:regular,italic,700,700italic|PT+Serif:regular,italic,700,700italic|Pacifico:regular|Palanquin:100,200,300,regular,500,600,700|Palanquin+Dark:regular,500,600,700|Parisienne:regular|Passion+One:regular,700,900|Patua+One:regular|Permanent+Marker:regular|Philosopher:regular,italic,700,700italic|Pinyon+Script:regular|Play:regular,700|Playball:regular|Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic|Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Proza+Libre:regular,italic,500,500italic,600,600italic,700,700italic,800,800italic|Public+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Quicksand:300,regular,500,600,700|Rajdhani:300,regular,500,600,700|Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Rambla:regular,italic,700,700italic|Rammetto+One:regular|Red+Hat+Display:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic|Red+Hat+Text:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic|Reenie+Beanie:regular|Righteous:regular|Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic|Roboto+Condensed:300,300italic,regular,italic,700,700italic|Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic|Roboto+Slab:100,200,300,regular,500,600,700,800,900|Rochester:regular|Rock+Salt:regular|Ropa+Sans:regular,italic|Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic|Ruda:regular,500,600,700,800,900|Rufina:regular,700|Sacramento:regular|Saira:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Saira+Condensed:100,200,300,regular,500,600,700,800,900|Saira+Extra+Condensed:100,200,300,regular,500,600,700,800,900|Saira+Semi+Condensed:100,200,300,regular,500,600,700,800,900|Sarabun:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic|Sarala:regular,700|Satisfy:regular|Sen:regular,700,800|Shrikhand:regular|Sigmar+One:regular|Signika:300,regular,500,600,700|Signika+Negative:300,regular,500,600,700|Six+Caps:regular|Slabo+27px:regular|Sofia:regular|Source+Code+Pro:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Source+Sans+Pro:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900,900italic|Space+Mono:regular,italic,700,700italic|Spectral:200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic|Spectral+SC:200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic|Spicy+Rice:regular|Srisakdi:regular,700|Staatliches:regular|Syncopate:regular,700|Tajawal:200,300,regular,500,700,800,900|Tangerine:regular,700|Teko:300,regular,500,600,700|Tenor+Sans:regular|Tinos:regular,italic,700,700italic|Titan+One:regular|Titillium+Web:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900|Trispace:100,200,300,regular,500,600,700,800|Turret+Road:200,300,regular,500,700,800|Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic|Ubuntu+Condensed:regular|Ubuntu+Mono:regular,italic,700,700italic|Ultra:regular|Unica+One:regular|Varela:regular|Varela+Round:regular|Vast+Shadow:regular|Vollkorn:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic|Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Yanone+Kaffeesatz:200,300,regular,500,600,700|Zilla+Slab:300,300italic,regular,italic,500,500italic,600,600italic,700,700italic&display=swap" rel="stylesheet" type='text/css'>
+    
+<script src="./js/app.js">
+</script>
+    
+<script src="./js/jquery-3.2.1.min.js">
+</script>
+    
+<script type="text/javascript" src="./js/jquery.toast.min.js">
+</script>
+    
+<script src="./js/slick.js" type="text/javascript" charset="utf-8">
+</script>
+    
+<script src="./js/owl.carousel.min.js" type="text/javascript">
+</script>
+    
+<script src="./js/confitti.min.js" type="text/javascript">
+</script>
+    
+<script src="./js/download_page.js" type="text/javascript">
+</script>
+
+
+    
+<script>
+      function resizeIframe(obj) {
+        
+      }
+    
+</script>
+    
+<style type="text/css">
+        .rce-landinpage-inner{
+            display: block !important;
+        }
+        .rce-device-iframe{
+            display: none !important;
+        }
+    
+</style>
+
+        
+</head>
+
+<body>
+    	
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	
+<style type="text/css">
+		 .rc-modal {
+		    width: 800px;
+		    top: calc(50VH - 265px);
+		    padding: 60px 120px;
+		}
+		.none-show-page{
+			display: none !important;
+		}
+	   
+		.timer-bar-fixed{
+			position: fixed !important;
+			width: 100% !important;
+			top: 0px;
+			z-index: 100;
+		}  
+		#signup_modal{
+			bottom: unset;
+		}
+		.ci-pbm-wrap{
+			bottom: 20px;
+			right: 20px;
+		}
+		.rce-element-resize-handle:after{
+			content: unset !important;
+		}
+		.rce-column-blank{
+			display: none;
+		}
+		.rce-column{
+			border: 0px;
+		}
+	
+</style>
+	
+<div data-title="section" class="rc-modal rce-block" id="signup_modal" data-desktop_bg_img="none" data-desktop_bg_color="rgb(255, 255, 255)" data-desktop_style="position: fixed; bottom: unset; top: calc(50vh - 280px); padding: 60px 80px; display: none;">
+
+<div class="rc-loading-overlay-wrap">
+</div>
+
+<div class="rc-modal-progress-wrap">
+
+</div>
+
+<div class="rc-modal-header" style="height:unset; background-color: transparent;">
+
+<div>
+</div>
+
+<div data-title="text" id="rce_signup_ele_popup_title" class="rce-element rce-text rc-modal-header-title">Yes, Please Send Me More Info
+</div>
+
+<div data-title="text" id="rce_signup_ele_popup_subtitle" class="rce-element rce-text">
+Please Enter Your Details Below:
+
+</div>
+
+<div class="rc-modal-close" style="right: -15px; top: -15px;  background-color: black !important; border: 2px solid white; box-shadow: -1px 1px 2px black;">
+<i class="fa fa-times">
+</i>
+</div>
+
+</div>
+
+<div class="rc-modal-content" style="padding-top: 20px;">
+
+<form action="" method="post" enctype="multipart/form-data">
+
+<input type="hidden" name="_token" value="wzPRZSmxBNRN5ebncdDBJfNcCfGcgKDdNwIZqSIZ"> 
+<div>
+
+<input class="form-control rc-required rce-element rce-input for-device" data-title="input" type="text" name="user_name" id="rce_signup_ele_popup_name" placeholder="Your Name" required="">
+
+</div>
+
+<div style="margin-top: 10px;">
+
+<input class="form-control rc-required rce-element rce-input for-device" data-title="input" type="email" name="email" id="rce_signup_ele_popup_email" placeholder="Your Email" required="">
+
+</div>
+<div class="rce-custom-field" style="display: block;">
+</div>
+
+<div style="margin: 10px 0px;">
+
+<button data-title="button" type="button" class="rce-element rce-button btn rce-direct-signup-btn for-device" id="rce_signup_ele_popup_submit">
+<span contenteditable="true">Get Access Now &gt;&gt;
+</span>
+</button>
+
+</div>
+
+<div>
+
+<button data-title="button" type="button" class="rce-element rce-button btn facebook-signup-btn for-device" id="rce_signup_ele_popup_facebook">
+<span contenteditable="true">Log in With Facebook
+</span>
+</button>
+
+</div>
+
+<div data-title="text" id="rce_signup_ele_popup_subtitle_1" class="rce-element rce-text">
+* we will not spam, rent, or sell your information... *
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+<div data-title="section" class="rc-modal rce-block _mCS_20 mCustomScrollbar mCS_no_scrollbar _mCS_25" id="rce_exit_popup_modal" data-status="no" data-desktop_bg_img="none" data-desktop_bg_color="rgb(255, 255, 255)" data-desktop_style="padding: 0px; position: fixed; font-size: 0px; bottom: unset; border-radius: 10px; display: none;">
+<div id="mCSB_25" class="mCustomScrollBox mCS-dark mCSB_vertical mCSB_inside" tabindex="0" data-desktop_style="max-height: 448px;">
+<div id="mCSB_25_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" dir="ltr" data-desktop_style="position:relative; top:0; left:0;">
+<div id="mCSB_20" class="mCustomScrollBox mCS-dark mCSB_vertical mCSB_inside" tabindex="0" data-desktop_style="max-height: 448px;">
+<div id="mCSB_20_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" dir="ltr" data-desktop_style="position:relative; top:0; left:0;">
+<div id="mCSB_20" class="mCustomScrollBox mCS-dark mCSB_vertical mCSB_inside" tabindex="0" data-desktop_style="max-height: 448px;">
+<div id="mCSB_20_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" dir="ltr" data-desktop_style="position:relative; top:0; left:0;">
+<div id="mCSB_20" class="mCustomScrollBox mCS-dark mCSB_vertical mCSB_inside" tabindex="0" data-desktop_style="max-height: 448px;">
+<div id="mCSB_20_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" dir="ltr" data-desktop_style="position:relative; top:0; left:0;">
+<div id="mCSB_20" class="mCustomScrollBox mCS-dark mCSB_vertical mCSB_inside" tabindex="0" data-desktop_style="max-height: 448px;">
+<div id="mCSB_20_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" dir="ltr" data-desktop_style="position:relative; top:0; left:0;">
+
+<div class="rc-loading-overlay-wrap">
+</div>
+
+<div class="rc-modal-header" style="height:unset;">
+
+<div class="rc-modal-close" style="right: 10px; top: 10px;  background-color: black !important; border: 2px solid white; box-shadow: -1px 1px 2px black;">
+<i class="fa fa-times">
+</i>
+</div>
+
+</div>
+
+<div class="rc-modal-content" style="padding-top: 20px;">
+
+<div class="rce-flex" style="font-size: 0px; grid-gap: 20px;">
+
+<div id="rce_exit_popup_modal_7" class="">
+
+<div data-title="image" id="rce_exit_popup_modal_1" class="rce-element rce-image">
+
+<img src="https://app.marketingblocks.ai/upload/exit_img.png" style="width: 100%;" class="mCS_img_loaded">
+
+</div>
+
+</div>
+
+<div>
+
+<div style="padding: 20px;">
+
+<div data-title="text" id="rce_exit_popup_modal_2" class="rce-element rce-text">
+PSST, 
+<font style="text-decoration: underline;">BEFORE YOU
+</font> GO!
+
+</div>
+
+<div data-title="text" id="rce_exit_popup_modal_3" class="rce-element rce-text">
+Your headline goes here..... Your headline goes here..... Your headline
+
+</div>
+
+<div data-title="text" id="rce_exit_popup_modal_4" class="rce-element rce-text">
+Sub headline goes here..... Sub headline goes here..... Sub headline
+
+</div>
+
+<div class="rce-flex rce-text-500" style="margin-top: 40px; grid-gap: 20px;">
+
+<button type="button" data-title="button" id="rce_exit_popup_modal_5" class="rce-element rce-button for-device">
+<span contenteditable="true">yes, please! am interested
+</span>
+</button>
+
+<button type="button" data-title="button" id="rce_exit_popup_modal_6" class="rce-element rce-button for-device">
+<span contenteditable="true">no,i am not interested
+</span>
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div id="mCSB_20_scrollbar_vertical" class="mCSB_scrollTools mCSB_20_scrollbar mCS-dark mCSB_scrollTools_vertical" data-desktop_style="display: none; opacity: 0;">
+<div class="mCSB_draggerContainer">
+<div id="mCSB_20_dragger_vertical" class="mCSB_dragger" data-desktop_style="position: absolute; min-height: 30px; top: 0px;">
+<div class="mCSB_dragger_bar" style="line-height: 30px;">
+</div>
+</div>
+<div class="mCSB_draggerRail">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="mCSB_20_scrollbar_vertical" class="mCSB_scrollTools mCSB_20_scrollbar mCS-dark mCSB_scrollTools_vertical" data-desktop_style="opacity: 0;">
+<div class="mCSB_draggerContainer">
+<div id="mCSB_20_dragger_vertical" class="mCSB_dragger" data-desktop_style="position:absolute;">
+<div class="mCSB_dragger_bar">
+</div>
+</div>
+<div class="mCSB_draggerRail">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="mCSB_20_scrollbar_vertical" class="mCSB_scrollTools mCSB_20_scrollbar mCS-dark mCSB_scrollTools_vertical" data-desktop_style="opacity: 0;">
+<div class="mCSB_draggerContainer">
+<div id="mCSB_20_dragger_vertical" class="mCSB_dragger" data-desktop_style="position:absolute;">
+<div class="mCSB_dragger_bar">
+</div>
+</div>
+<div class="mCSB_draggerRail">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="mCSB_20_scrollbar_vertical" class="mCSB_scrollTools mCSB_20_scrollbar mCS-dark mCSB_scrollTools_vertical" data-desktop_style="opacity: 0;">
+<div class="mCSB_draggerContainer">
+<div id="mCSB_20_dragger_vertical" class="mCSB_dragger" data-desktop_style="position:absolute;">
+<div class="mCSB_dragger_bar">
+</div>
+</div>
+<div class="mCSB_draggerRail">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="mCSB_25_scrollbar_vertical" class="mCSB_scrollTools mCSB_25_scrollbar mCS-dark mCSB_scrollTools_vertical" data-desktop_style="display: none; opacity: 0;">
+<div class="mCSB_draggerContainer">
+<div id="mCSB_25_dragger_vertical" class="mCSB_dragger" data-desktop_style="position: absolute; min-height: 30px; top: 0px;">
+<div class="mCSB_dragger_bar" style="line-height: 30px;">
+</div>
+</div>
+<div class="mCSB_draggerRail">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="rce-page-element-border" id="rce_page_element_tool_wrap" data-desktop_style="display:none;">
+
+<span class="rce-page-element-tool-item" alt="edit" title="edit" data-title="edit">
+<i class="fa fa-edit">
+</i>
+</span>
+
+<span class="rce-page-element-tool-item" alt="remove" title="remove" data-title="remove">
+<i class="fa fa-trash">
+</i>
+</span>
+
+</div>
+
+<div class="rce-page-element-border rce-page-border-top" style="display: none;">
+</div>
+
+<div class="rce-page-element-border rce-page-border-right" style="display: none;">
+</div>
+
+<div class="rce-page-element-border rce-page-border-left" style="display: none;">
+</div>
+
+<div class="rce-page-element-border rce-page-border-bottom" style="display: none;">
+</div>
+
+<div data-title="section" id="rce_section_5" class="rce-section rce-menu-section" data-desktop_bg_img="none" data-desktop_bg_color="#ffffff">    
+<div class="rce-menu-row">        
+<div class="rce-menu-logo-wrap">            
+<div class="rce-icon-title-ele rce-element rce-logo" data-title="logo" id="rce_section_5_1" data-width_unit="px" data-border_radius_unit="px">                
+<div class="rce-hide-icon rce-icon-ele rce-logo-img">                    
+<img src="https://app.marketingblocks.ai/upload/logo.png" class="mCS_img_loaded">                
+</div>                
+<div id="rce_section_5_1_1" class="rce-show-title rce-title-ele rce-logo-title rce-n-ai" data-ai_type="product_title">TechHouse Outlet
+</div>            
+</div>        
+</div>        
+<div class="rce-mega-menu-icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">                
+<path d="M3 12H21M3 6H21M3 18H21" stroke="#344054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+</path>            
+</svg>
+</div>        
+<div class="rce-element rce-menu-wrap" data-title="menu" id="rce_section_5_3" data-mobile_bg_color="rgb(255, 255, 255)" data-mobile_bg_img="none">               
+<div data-title="link_item" id="rce_section_5_3_1" class="rce-icon-title-ele rce-element rce-menu-item">                
+<div class="rce-icon-ele rce-hide-icon rce-menu-item-icon">
+</div>                
+<div class="rce-show-title rce-title-ele rce-menu-item-text">Products
+</div>            
+</div>                        
+<div data-title="link_item" id="rce_section_5_3_3" class="rce-icon-title-ele rce-element rce-menu-item">                
+<div class="rce-icon-ele rce-hide-icon rce-menu-item-icon">
+</div>                
+<div class="rce-show-title rce-title-ele rce-menu-item-text">About
+</div>            
+</div>            
+<div data-title="link_item" id="rce_section_5_3_4" class="rce-icon-title-ele rce-element rce-menu-item">                
+<div class="rce-icon-ele rce-hide-icon rce-menu-item-icon">
+</div>                
+<div class="rce-show-title rce-title-ele rce-menu-item-text">Contact
+</div>            
+</div>            
+<div class="rce-menu-btn-wrap" id="rce_section_5_3_5">                    
+<form method="post" class="rce-form rce-signup-form" id="rce_section_5_3_5_1_form" data-desktop_style="width: fit-content;">                    
+<input type="hidden" name="_token" value="YNuQqTJz4YeorQ8CTSYVfszF45Ry34dgyC3dhmf4">                    
+<div class="rce-custom-field" style="display: none;">
+</div>
+<div class="rce-flex">                        
+<button type="button" data-title="signup_btn" id="rce_section_5_3_5_1" class="rce-only-signup rce-element rce-button rce-signup-btn rce-popup-signup-btn for-device" data-type="popup_form" data-width_unit="px" data-border_radius_unit="px">
+<span contenteditable="true">Shop Now
+</span>
+</button>                    
+</div>                                              
+</form>            
+</div>        
+</div>            
+</div>    
+    
+
+                
+<div class="rce-insert-line rce-insert-line-bottom">
+</div>
+            
+</div>
+<div data-title="section" id="rce_section_2" class="rce-section" data-desktop_bg_img="none" data-desktop_bg_color="#0e1b4d"> 
+<div class="container"> 
+<div class="row"> 
+<div class="col-md-5" style="position:relative; padding-bottom: 40px;"> 
+<div id="rce_section_2_1" data-title="block" class="rce-block" data-desktop_bg_color="rgba(0, 0, 0, 0)" data-desktop_bg_img="none"> 
+<div data-title="text" id="rce_section_2_1_2" class="rce-element rce-text rce-n-ai" data-ai_type="Company Motto" data-width_unit="px" data-border_radius_unit="px" data-ai_category_type="headline">Discover and Buy the Latest Tech &amp; Gadgets
+</div> 
+<div data-title="text" id="rce_section_2_1_3" class="rce-element rce-text rce-n-ai" data-ai_type="Slogan" data-ai_category_type="subheadline">TechHouse Outlet - Your Ultimate Online Marketplace for All Things Tech
+</div> 
+<form method="post" class="rce-form rce-signup-form" id="rce_section_2_1_4" data-desktop_style="text-align: left;  width: 100%;"> 
+<input type="hidden" name="_token" value="wzPRZSmxBNRN5ebncdDBJfNcCfGcgKDdNwIZqSIZ">
+<div>    
+<input class="form-control rc-required rce-element rce-input for-device" data-title="input" type="text" name="user_name" id="rce_section_2_1_4_1_direct_name" placeholder="Your Name" required="">
+</div>
+<div style="margin: 10px 0px;">    
+<input class="form-control rc-required rce-element rce-input for-device" data-title="input" type="email" name="email" id="rce_section_2_1_4_1_direct_email" placeholder="Your Email" required="">
+</div>
+<div class="rce-custom-field" style="display: none;">
+</div> 
+<button type="button" data-title="signup_btn" id="rce_section_2_1_4_1" class="rce-element rce-button rce-signup-btn for-device rce-popup-signup-btn animated bounceInRight go" data-type="link" data-ai_category_type="hero_button_text" data-thanks_url="https://t.me/Anonbusiness_Support" data-success_msg="Thank you For Choosing us " data-confitti="no" data-link-type="anchor" data-link="rce_section_5" data-open_new_tab="yes" data-animation_css="animated bounceInRight go">
+<span contenteditable="true">Shop now
+</span>
+</button> 
+</form> 
+</div> 
+</div> 
+<div class="col-md-7"> 
+<div data-title="image" id="rce_section_2_1_5" class="rce-element rce-image rce-n-ai" data-ai_type="image" data-keyword="tech" data-image_type="img"> 
+<div class="rce-image-inner" style="overflow: hidden; background-image: url(&quot;https://images.pexels.com/photos/9476365/pexels-photo-9476365.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940&quot;); width: 100%; height: 100%; background-position: center top;"> 
+<img src="https://images.pexels.com/photos/9476365/pexels-photo-9476365.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" class="mCS_img_loaded"> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+<div class="" style="height:200px; width:100%; background-color:white;">
+</div> 
+
+<div class="rce-insert-line rce-insert-line-bottom">
+</div>
+
+</div>
+<div data-title="section" id="rce_section_8" class="rce-section rce-n-ai" data-ai_type="background_img" data-desktop_bg_img="https://marketingblocks.s3.amazonaws.com/public/upload/Website-banner.png" data-desktop_bg_color="#ffffff00" data-keyword="tech" data-width_unit="px" data-border_radius_unit="px">    
+<div style="width: 80%; position:absolute; left: 0px; top: 0px; height: 100%; background-image: linear-gradient(91.19deg, #0e1b4d 3.45%, rgba(196, 196, 196, 0) 95.96%); ">
+</div>    
+<div class="container">        
+<div class="row">            
+<div class="col-md-8">                
+<div class="rce-vertical-box-start" style="grid-gap: 10px; padding:20px 10px; max-width: 600px;">                    
+<div data-title="text" id="rce_section_8_2" class="rce-element rce-text rce-n-ai" data-ai_type="Headline" data-width_unit="px" data-border_radius_unit="px">Auriculares inalámbricos Bmani
+</div>                    
+<div data-title="text" id="rce_section_8_3" class="rce-element rce-text rce-n-ai" data-ai_type="Sub Headline">Estuche de carga con pantallas LED duales, Bluetooth y calidad de sonido estéreo
+</div>                                         
+<form method="post" class="rce-form rce-signup-form for-device" id="rce_section_8_1_4">                        
+<input type="hidden" name="_token" value="YNuQqTJz4YeorQ8CTSYVfszF45Ry34dgyC3dhmf4">                         
+<button type="button" data-title="signup_btn" id="rce_section_8_1_4_1" class="rce-element rce-button rce-signup-btn rce-popup-signup-btn for-device" data-type="popup_form">
+<span contenteditable="true">Shop Now
+</span>
+</button>                    
+</form>                
+</div>              
+</div>         
+</div>    
+</div>    
+    
+
+                
+<div class="rce-insert-line rce-insert-line-bottom">
+</div>
+            
+</div>
+<div data-title="section" id="rce_section_12" class="rce-section" data-desktop_bg_img="none" data-desktop_bg_color="rgb(255,255,255)">    
+<div class="container">        
+<div class="row">            
+<div class="col-md-12">                
+<div class="rce-grid rce-grid-2" style="grid-gap:50px; width: 100%;">                    
+<div class="rce-element rce-product" id="rce_section_12_2" data-title="product">                        
+<div data-title="image" id="rce_section_12_2_5" class="rce-element rce-image rce-product-image">                            
+<div class="rce-image-inner" style="position: absolute; background-color: rgb(244, 244, 244); background-image: url(&quot;https://marketingblocks.s3.amazonaws.com/public/upload/gimbal.jpg&quot;); border-radius: 32px;">                                
+<img src="https://marketingblocks.s3.amazonaws.com/public/upload/gimbal.jpg" style="border-radius: 40px;">                            
+</div>                        
+</div>                        
+<div class="rce-vertical-box-start" style="padding:20px 0px; grid-gap: 10px;">                            
+<div data-title="text" id="rce_section_12_2_1" class="rce-element rce-text rce-product-desc">SnoozeBand™ Deluxe - Auriculares con antifaz para dormir
+</div>                            
+<div data-title="text" id="rce_section_12_2_2" class="rce-element rce-text rce-product-name">Q48.00
+</div>                            
+<div class="rce-flex">                                 
+<button type="button" data-title="button" id="rce_section_12_2_3" class="rce-flex rce-element rce-button rce-product-payment-btn for-device">
+<span contenteditable="true">Buy Now
+</span>                                 
+</button>                            
+</div>                        
+</div>                    
+</div>
+<div class="rce-element rce-product" id="rce_section_12_1" data-title="product">                        
+<div data-title="image" id="rce_section_12_1_5" class="rce-element rce-image rce-product-image">                            
+<div class="rce-image-inner" style="position: absolute; background-color: rgb(244, 244, 244); background-image: url(&quot;https://marketingblocks.s3.amazonaws.com/public/upload/snoozeband.jpeg&quot;); border-radius: 32px;">                                
+<img src="https://marketingblocks.s3.amazonaws.com/public/upload/snoozeband.jpeg" style="border-radius: 40px;">                            
+</div>                        
+</div>                        
+<div class="rce-vertical-box-start" style="padding:20px 0px; grid-gap: 10px;">                            
+<div data-title="text" id="rce_section_12_1_1" class="rce-element rce-text rce-product-desc">SnoozeBand™ Deluxe - Auriculares con antifaz para dormir
+</div>                            
+<div data-title="text" id="rce_section_12_1_2" class="rce-element rce-text rce-product-name">Q16.00
+<div>
+</div>
+</div>                            
+<div class="rce-flex">                                 
+<button type="button" data-title="button" id="rce_section_12_1_3" class="rce-flex rce-element rce-button rce-product-payment-btn for-device">
+<span contenteditable="true">Buy Now
+</span>                                 
+</button>                            
+</div>                        
+</div>                    
+</div>                                        
+<div class="rce-element rce-product" id="rce_section_12_4" data-title="product">                        
+<div data-title="image" id="rce_section_12_4_5" class="rce-element rce-image rce-product-image" data-width_unit="px" data-border_radius_unit="px">                            
+<div class="rce-image-inner" style="position: absolute; background-color: rgb(244, 244, 244); background-image: url(&quot;https://marketingblocks.s3.amazonaws.com/public/upload/buds.png&quot;); border-radius: 32px;">                                
+<img src="https://marketingblocks.s3.amazonaws.com/public/upload/buds.png" style="border-radius: 40px;">                            
+</div>                        
+</div>                        
+<div class="rce-vertical-box-start" style="padding:20px 0px; grid-gap: 10px;">                            
+<div data-title="text" id="rce_section_12_4_1" class="rce-element rce-text rce-product-desc">Auriculares inalámbricos Bmani
+</div>                            
+<div data-title="text" id="rce_section_12_4_2" class="rce-element rce-text rce-product-name">Q100.00
+<div>
+</div>
+</div>                            
+<div class="rce-flex">                                 
+<button type="button" data-title="button" id="rce_section_12_4_3" class="rce-flex rce-element rce-button rce-product-payment-btn for-device">
+<span contenteditable="true">Buy Now
+</span>                                 
+</button>                            
+</div>                        
+</div>                    
+</div>                    
+<div class="rce-element rce-product" id="rce_section_12_5" data-title="product">                        
+<div data-title="image" id="rce_section_12_5_1" class="rce-element rce-image rce-product-image">                            
+<div class="rce-image-inner" style="position: absolute; background-color: rgb(244, 244, 244); background-image: url(&quot;https://marketingblocks.s3.amazonaws.com/public/upload/PDP1.png&quot;); border-radius: 32px;">                                
+<img src="https://marketingblocks.s3.amazonaws.com/public/upload/PDP1.png" style="border-radius: 40px;">                            
+</div>                        
+</div>                        
+<div class="rce-vertical-box-start" style="padding:20px 0px; grid-gap: 10px;">                            
+<div data-title="text" id="rce_section_12_5_2" class="rce-element rce-text rce-product-desc">Tapones para dormir, tapones antirruido
+</div>                            
+<div data-title="text" id="rce_section_12_5_3" class="rce-element rce-text rce-product-name">
+<div>
+<span style="font-family: Poppins;">Q48.00
+</span>
+<br>
+</div>
+</div>                            
+<div class="rce-flex">                                 
+<button type="button" data-title="button" id="rce_section_12_5_4" class="rce-flex rce-element rce-button rce-product-payment-btn for-device" data-type="link">
+<span contenteditable="true">Buy Now
+</span>                                 
+</button>                            
+</div>                        
+</div>                    
+</div>                
+</div>            
+</div>        
+</div>    
+</div>    
+                
+<div class="rce-insert-line rce-insert-line-bottom">
+</div>
+            
+</div>
+<div data-title="section" id="rce_section_7" class="rce-section" data-desktop_bg_img="none" data-desktop_bg_color="rgba(255, 255, 255, 1)">    
+<div class="container">        
+<div class="row">            
+<div class="col-md-6 col-xs-12 rce-d-p-40 rce-flex-start" style="text-align: center;  position: relative;">               
+<div data-title="image" id="rce_section_7_6" class="rce-element rce-image rce-image rce-n-ai" data-ai_type="image" data-keyword="tech" data-image_type="img">                    
+<img src="https://marketingblocks.s3.amazonaws.com/public/upload/buds.png" style="width: 100%; border-radius: 20px;" class="mCS_img_loaded">                
+</div>            
+</div>            
+<div class="col-md-6 col-xs-12 rce-d-p-40" style="display: flex; flex-flow: column; justify-content: center;">                
+<div data-title="text" id="rce_section_7_1" class="rce-element rce-text">                   PERFECT DESIGN                
+</div>                
+<div data-title="text" id="rce_section_7_2" class="rce-element rce-text rce-n-ai" data-ai_type="Company Motto">Auriculares inalámbricos Bmani
+</div>                                
+<form method="post" class="rce-form rce-signup-form for-device" id="rce_section_7_3">                        
+<input type="hidden" name="_token" value="YNuQqTJz4YeorQ8CTSYVfszF45Ry34dgyC3dhmf4">                     
+<button type="button" data-title="signup_btn" id="rce_section_7_3_1" class="rce-element rce-button rce-signup-btn rce-popup-signup-btn for-device" data-type="popup_form">
+<span contenteditable="true">Buy Now
+</span>
+</button>                
+</form>            
+</div>        
+</div>     
+</div>    
+    
+
+                
+<div class="rce-insert-line rce-insert-line-bottom">
+</div>
+            
+</div>
+<div data-title="section" id="rce_section_6" class="rce-section" data-desktop_bg_img="none" data-desktop_bg_color="rgb(255,255,255)">    
+<div class="container">        
+<div class="row">             
+<div class="col-md-7">                
+<div id="rce_section_6_1" class="">                     
+<div data-title="text" id="rce_section_6_1_1" class="rce-element rce-text rce-n-ai" data-ai_type="Slogan">Gimbal para teléfono de 3 ejes con rastreador activo AI magnético
+</div>                                        
+<form method="post" class="rce-form rce-signup-form" id="rce_section_6_1_3" data-desktop_style="text-align: left;  width: 100%; margin-top: 40px;">                        
+<input type="hidden" name="_token" value="YNuQqTJz4YeorQ8CTSYVfszF45Ry34dgyC3dhmf4">                         
+<button type="button" data-title="signup_btn" id="rce_section_6_1_3_1" class="rce-element rce-button rce-signup-btn rce-popup-signup-btn for-device" data-type="popup_form" data-width_unit="px" data-border_radius_unit="px">
+<span contenteditable="true">Buy Now
+</span>
+</button>                    
+</form>                
+</div>             
+</div>             
+<div class="col-md-5" style="position:relative;">                 
+<div data-title="image" id="rce_section_6_1_4" class="rce-element rce-image" data-image_type="img" data-width_unit="px" data-border_radius_unit="px">                    
+<img src="https://marketingblocks.s3.amazonaws.com/public/upload/gimbal.jpg" style="width:100%;" class="mCS_img_loaded">                
+</div>            
+</div>        
+</div>     
+</div>    
+    
+
+                
+<div class="rce-insert-line rce-insert-line-bottom">
+</div>
+            
+</div>
+<div data-title="section" id="rce_section_3" class="rce-section" data-desktop_bg_img="none" data-desktop_bg_color="#F9F9F9">    
+<div class="container">        
+<div data-title="text" id="rce_section_3_1" class="rce-text-800 rce-element rce-text rce-n-ai first-bg-text-color" data-color="#0e1b4d"> 
+<font style="color:white; background-color:#0e1b4d; padding: 5px 10px;">Unleash
+</font> Your Tech Fantasies with TechHouse Outlet : The Ultimate Online Marketplace!
+</div>                    
+</div>    
+    
+
+				
+<div class="rce-insert-line rce-insert-line-bottom">
+</div>
+			
+</div>
+<div data-title="section" id="rce_section_10" class="rce-section" data-desktop_bg_img="none" data-desktop_bg_color="#ffffff"> 
+<div class="container"> 
+<div id="rce_section_10_1" data-title="cta_content" class="rce-element rce-n-ai rce-cta-box" data-width_unit="px" data-border_radius_unit="px">  
+<div data-title="text" id="rce_section_10_1_1" class="rce-text-600 rce-element rce-text rce-cta-subheading" data-ai_type="Sub Headline" data-ai_category_type="cta_heading" data-width_unit="px" data-border_radius_unit="px">Join Tech House Outlet Today
+</div> 
+<form method="post" class="rce-form rce-signup-form" id="rce_section_10_1_3_form" data-desktop_style="margin-top: 50px;max-width: 500px;margin: 0px auto;display: block; margin-top: 40px;"> 
+<input type="hidden" name="_token" value="k9ZECuk4LgxBJindfcZVmnGVSW80BaDrlK5YJOaQ"> 
+<div class="rce-custom-field" style="display: none;">
+</div>
+<div class="rce-flex"> 
+<button type="button" data-title="signup_btn" id="rce_section_10_3_1" class="rce-element rce-button rce-signup-btn rce-popup-signup-btn for-device" data-ai_category_type="cta_button text" data-type="link" data-open_new_tab="no" data-link-type="external" data-link="https://t.me/Anonbusiness_Support" data-width_unit="px" data-border_radius_unit="px">
+<span contenteditable="true">Sign Up Now
+</span>
+</button> 
+</div> 
+</form> 
+</div> 
+</div> 
+
+<div class="rce-insert-line rce-insert-line-bottom">
+</div>
+
+</div>
+<div data-title="section" id="rce_section_1" class="rce-section" data-desktop_bg_img="none" data-desktop_bg_color="#0e1b4d0a"> 
+<div class=""> 
+<div data-title="text" id="rce_section_1_1" class="rce-text-500 rce-element rce-text" data-ai_category_type="testimonial_subheading">Read what our satisfied customers have to say about Tech House.
+</div> 
+<div data-title="text" id="rce_section_1_2" class="rce-text-800 rce-element rce-text" data-ai_category_type="testimonial_heading">What Our Customers Say
+</div> 
+<div class="row" style="margin-top: 40px;"> 
+<div class="col-md-12" style="position:relative;"> 
+<div class="rce-testimonial rce-testimonial-1-wrap" id="rce_section_1_3" style="padding:0px 20px;" data-type="type-3"> 
+<div id="rce_section_1_3_inner" class="rce-testimonial-1-inner slick-initialized slick-slider slick-dotted">
+<div class="slick-list draggable" style="padding: 0px 50px;">
+<div class="slick-track" style="opacity: 1; width: 20000px; transform: translate3d(-2775px, 0px, 0px);">
+<div class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1">
+<div>
+<div class="rce-testimonial-item" style="padding: 20px; max-width: 540px; width: 100%; display: inline-block;"> 
+<div class="rce-vertical-box-start" style="justify-content: flex-start; grid-gap: 10px;   border-radius: 50px 0px 50px 0px; background-color: white; padding: 20px;"> 
+<div class="rce-flex-start"> 
+<svg width="60" height="86" viewBox="0 0 110 86" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+<path d="M46.9456 6.13191L42.9568 0C15.3417 18.549 0 41.0838 0 59.6328C0 77.5686 13.1939 86 24.3933 86C38.5077 86 48.4798 74.0428 48.4798 61.4724C48.4798 50.8948 41.7294 41.8503 32.6778 38.4777C30.0697 37.5579 27.6151 36.7914 27.6151 32.3458C27.6151 26.6738 31.7573 18.2424 46.9456 6.13191ZM107.852 6.13191L103.863 0C76.5551 18.549 60.9066 41.0838 60.9066 59.6328C60.9066 77.5686 74.4073 86 85.6067 86C99.8745 86 110 74.0428 110 61.4724C110 50.8948 103.096 41.8503 93.7378 38.4777C91.1297 37.5579 88.8285 36.7914 88.8285 32.3458C88.8285 26.6738 93.1241 18.2424 107.852 6.13191Z" fill="#0e1b4d0a">
+</path> 
+</svg> 
+</div> 
+<div class="rce-flex" style="width: 100%; margin-top:-90px"> 
+<div data-title="image" id="" class="rce-element rce-image" style="width: 60px; height: 60px;" data-image_type="img"> 
+<div class="rce-image-inner" style="overflow: hidden; background-image: url(&quot;https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; border-radius: 50%; background-color: rgb(204, 204, 204);"> 
+<img src="https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png" class="mCS_img_loaded"> 
+</div> 
+</div> 
+</div> 
+<div data-title="text" id="" class="rce-text-400 rce-element rce-text" style="font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;">Anonymous
+</div> 
+<div data-title="text" id="" class="rce-text-400 rce-element rce-text" style="font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;"> Happy Client 
+</div> 
+<div data-title="text" id="" class="rce-text-800 rce-element rce-text" style="font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;" data-ai_category_type="testimonial3_text">The customer support at Tech House is top-notch. They were quick to resolve any issues I had and ensured a smooth shopping experience.
+</div> 
+<div class="rce-testimonial-star"> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+</div> 
+</div> 
+</div>
+</div>
+</div>
+<div class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1">
+<div>
+<div class="rce-testimonial-item" style="padding: 20px; max-width: 540px; width: 100%; display: inline-block;"> 
+<div class="rce-vertical-box-start" style="justify-content: flex-start; grid-gap: 10px;   border-radius: 50px 0px 50px 0px; background-color: white; padding: 20px;"> 
+<div class="rce-flex-start"> 
+<svg width="60" height="86" viewBox="0 0 110 86" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+<path d="M46.9456 6.13191L42.9568 0C15.3417 18.549 0 41.0838 0 59.6328C0 77.5686 13.1939 86 24.3933 86C38.5077 86 48.4798 74.0428 48.4798 61.4724C48.4798 50.8948 41.7294 41.8503 32.6778 38.4777C30.0697 37.5579 27.6151 36.7914 27.6151 32.3458C27.6151 26.6738 31.7573 18.2424 46.9456 6.13191ZM107.852 6.13191L103.863 0C76.5551 18.549 60.9066 41.0838 60.9066 59.6328C60.9066 77.5686 74.4073 86 85.6067 86C99.8745 86 110 74.0428 110 61.4724C110 50.8948 103.096 41.8503 93.7378 38.4777C91.1297 37.5579 88.8285 36.7914 88.8285 32.3458C88.8285 26.6738 93.1241 18.2424 107.852 6.13191Z" fill="#0e1b4d0a">
+</path> 
+</svg> 
+</div> 
+<div class="rce-flex" style="width: 100%; margin-top:-90px"> 
+<div data-title="image" id="" class="rce-element rce-image" style="width: 60px; height: 60px;" data-image_type="img"> 
+<div class="rce-image-inner" style="overflow: hidden; background-image: url(&quot;https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; border-radius: 50%; background-color: rgb(204, 204, 204);"> 
+<img src="https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png" class="mCS_img_loaded"> 
+</div> 
+</div> 
+</div> 
+<div data-title="text" id="" class="rce-text-400 rce-element rce-text" style="font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;">Anonymous
+</div> 
+<div data-title="text" id="" class="rce-text-400 rce-element rce-text" style="font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;"> Happy Client 
+</div> 
+<div data-title="text" id="" class="rce-text-800 rce-element rce-text" style="font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;"> “Everyone working in the office is very knowledgeable about all types of dental work and options for your individual needs.” 
+</div> 
+<div class="rce-testimonial-star"> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+</div> 
+</div> 
+</div>
+</div>
+</div>
+<div class="slick-slide slick-cloned slick-center" data-slick-index="-1" aria-hidden="true" tabindex="-1">
+<div>
+<div class="rce-testimonial-item" style="padding: 20px; max-width: 540px; width: 100%; display: inline-block;"> 
+<div class="rce-vertical-box-start" style="justify-content: flex-start; grid-gap: 10px;   border-radius: 50px 0px 50px 0px; background-color: white; padding: 20px;"> 
+<div class="rce-flex-start"> 
+<svg width="60" height="86" viewBox="0 0 110 86" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+<path d="M46.9456 6.13191L42.9568 0C15.3417 18.549 0 41.0838 0 59.6328C0 77.5686 13.1939 86 24.3933 86C38.5077 86 48.4798 74.0428 48.4798 61.4724C48.4798 50.8948 41.7294 41.8503 32.6778 38.4777C30.0697 37.5579 27.6151 36.7914 27.6151 32.3458C27.6151 26.6738 31.7573 18.2424 46.9456 6.13191ZM107.852 6.13191L103.863 0C76.5551 18.549 60.9066 41.0838 60.9066 59.6328C60.9066 77.5686 74.4073 86 85.6067 86C99.8745 86 110 74.0428 110 61.4724C110 50.8948 103.096 41.8503 93.7378 38.4777C91.1297 37.5579 88.8285 36.7914 88.8285 32.3458C88.8285 26.6738 93.1241 18.2424 107.852 6.13191Z" fill="#0e1b4d0a">
+</path> 
+</svg> 
+</div> 
+<div class="rce-flex" style="width: 100%; margin-top:-90px"> 
+<div data-title="image" id="" class="rce-element rce-image" style="width: 60px; height: 60px;" data-image_type="img"> 
+<div class="rce-image-inner" style="overflow: hidden; background-image: url(&quot;https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; border-radius: 50%; background-color: rgb(204, 204, 204);"> 
+<img src="https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png" class="mCS_img_loaded"> 
+</div> 
+</div> 
+</div> 
+<div data-title="text" id="" class="rce-text-400 rce-element rce-text" style="font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;">Anonymous
+</div> 
+<div data-title="text" id="" class="rce-text-400 rce-element rce-text" style="font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;"> Happy Client 
+</div> 
+<div data-title="text" id="" class="rce-text-800 rce-element rce-text" style="font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;"> “Everyone working in the office is very knowledgeable about all types of dental work and options for your individual needs.” 
+</div> 
+<div class="rce-testimonial-star"> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+</div> 
+</div> 
+</div>
+</div>
+</div>
+<div class="slick-slide" data-slick-index="0" aria-hidden="true" role="tabpanel" id="slick-slide170" tabindex="-1" aria-describedby="slick-slide-control170">
+<div>
+<div class="rce-testimonial-item" style="padding: 20px; max-width: 540px; width: 100%; display: inline-block;"> 
+<div class="rce-vertical-box-start" style="justify-content: flex-start; grid-gap: 10px;  border-radius: 50px 0px 50px 0px; background-color: white; padding: 20px;"> 
+<div class="rce-flex-start"> 
+<svg width="60" height="86" viewBox="0 0 110 86" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+<path d="M46.9456 6.13191L42.9568 0C15.3417 18.549 0 41.0838 0 59.6328C0 77.5686 13.1939 86 24.3933 86C38.5077 86 48.4798 74.0428 48.4798 61.4724C48.4798 50.8948 41.7294 41.8503 32.6778 38.4777C30.0697 37.5579 27.6151 36.7914 27.6151 32.3458C27.6151 26.6738 31.7573 18.2424 46.9456 6.13191ZM107.852 6.13191L103.863 0C76.5551 18.549 60.9066 41.0838 60.9066 59.6328C60.9066 77.5686 74.4073 86 85.6067 86C99.8745 86 110 74.0428 110 61.4724C110 50.8948 103.096 41.8503 93.7378 38.4777C91.1297 37.5579 88.8285 36.7914 88.8285 32.3458C88.8285 26.6738 93.1241 18.2424 107.852 6.13191Z" fill="#0e1b4d0a">
+</path> 
+</svg> 
+</div> 
+<div class="rce-flex" style="width: 100%; margin-top:-90px"> 
+<div data-title="image" id="rce_section_1_3_1_2" class="rce-element rce-image" style="width: 60px; height: 60px;" data-image_type="img"> 
+<div class="rce-image-inner" style="overflow: hidden; background-image: url(&quot;https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; border-radius: 50%; background-color: rgb(204, 204, 204);"> 
+<img src="https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png" class="mCS_img_loaded"> 
+</div> 
+</div> 
+</div> 
+<div data-title="text" id="rce_section_1_3_1_3" class="rce-text-400 rce-element rce-text" style="font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;">Anonymous
+</div> 
+<div data-title="text" id="rce_section_1_3_1_4" class="rce-text-400 rce-element rce-text" style="font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;"> Happy Client 
+</div> 
+<div data-title="text" id="rce_section_1_3_1_1" class="rce-text-800 rce-element rce-text" style="font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;" data-ai_category_type="testimonial2_text">I love how Tech House combines tech and music in one platform. It's like a dream come true for a gadget geek like me.
+</div>
+<div class="rce-flex" style="width:100%;">
+                        
+<div data-title="icon" id="rce_section_1_01" class="rce-element rce-icon" style="width:50px; height:50px; font-size: 50px;">
+                            
+<div class="rce-icon-ele rce-icon-inner">
+                                
+<i class="fa fa-star">
+</i>
+                            
+</div>
+                        
+</div>
+
+                    
+</div> 
+<div class="rce-testimonial-star"> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+</div> 
+</div> 
+</div>
+</div>
+</div>
+<div class="slick-slide" data-slick-index="1" aria-hidden="true" role="tabpanel" id="slick-slide171" aria-describedby="slick-slide-control171" tabindex="-1">
+<div>
+<div class="rce-testimonial-item" style="padding: 20px; max-width: 540px; width: 100%; display: inline-block;"> 
+<div class="rce-vertical-box-start" style="justify-content: flex-start; grid-gap: 10px;   border-radius: 50px 0px 50px 0px; background-color: white; padding: 20px;"> 
+<div class="rce-flex-start"> 
+<svg width="60" height="86" viewBox="0 0 110 86" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+<path d="M46.9456 6.13191L42.9568 0C15.3417 18.549 0 41.0838 0 59.6328C0 77.5686 13.1939 86 24.3933 86C38.5077 86 48.4798 74.0428 48.4798 61.4724C48.4798 50.8948 41.7294 41.8503 32.6778 38.4777C30.0697 37.5579 27.6151 36.7914 27.6151 32.3458C27.6151 26.6738 31.7573 18.2424 46.9456 6.13191ZM107.852 6.13191L103.863 0C76.5551 18.549 60.9066 41.0838 60.9066 59.6328C60.9066 77.5686 74.4073 86 85.6067 86C99.8745 86 110 74.0428 110 61.4724C110 50.8948 103.096 41.8503 93.7378 38.4777C91.1297 37.5579 88.8285 36.7914 88.8285 32.3458C88.8285 26.6738 93.1241 18.2424 107.852 6.13191Z" fill="#0e1b4d0a">
+</path> 
+</svg> 
+</div> 
+<div class="rce-flex" style="width: 100%; margin-top:-90px"> 
+<div data-title="image" id="rce_section_1_3_2_2" class="rce-element rce-image" style="width: 60px; height: 60px;" data-image_type="img"> 
+<div class="rce-image-inner" style="overflow: hidden; background-image: url(&quot;https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; border-radius: 50%; background-color: rgb(204, 204, 204);"> 
+<img src="https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png" class="mCS_img_loaded"> 
+</div> 
+</div> 
+</div> 
+<div data-title="text" id="rce_section_1_3_2_3" class="rce-text-400 rce-element rce-text" style="font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;">Anonymous
+</div> 
+<div data-title="text" id="rce_section_1_3_2_4" class="rce-text-400 rce-element rce-text" style="font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;"> Happy Client 
+</div> 
+<div data-title="text" id="rce_section_1_3_2_1" class="rce-text-800 rce-element rce-text" style="font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;" data-ai_category_type="testimonial3_text">The customer support at Tech House is top-notch. They were quick to resolve any issues I had and ensured a smooth shopping experience.
+</div> 
+<div class="rce-testimonial-star"> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+</div> 
+</div> 
+</div>
+</div>
+</div>
+<div class="slick-slide" data-slick-index="2" aria-hidden="true" role="tabpanel" id="slick-slide172" aria-describedby="slick-slide-control172" tabindex="-1">
+<div>
+<div class="rce-testimonial-item" style="padding: 20px; max-width: 540px; width: 100%; display: inline-block;"> 
+<div class="rce-vertical-box-start" style="justify-content: flex-start; grid-gap: 10px;   border-radius: 50px 0px 50px 0px; background-color: white; padding: 20px;"> 
+<div class="rce-flex-start"> 
+<svg width="60" height="86" viewBox="0 0 110 86" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+<path d="M46.9456 6.13191L42.9568 0C15.3417 18.549 0 41.0838 0 59.6328C0 77.5686 13.1939 86 24.3933 86C38.5077 86 48.4798 74.0428 48.4798 61.4724C48.4798 50.8948 41.7294 41.8503 32.6778 38.4777C30.0697 37.5579 27.6151 36.7914 27.6151 32.3458C27.6151 26.6738 31.7573 18.2424 46.9456 6.13191ZM107.852 6.13191L103.863 0C76.5551 18.549 60.9066 41.0838 60.9066 59.6328C60.9066 77.5686 74.4073 86 85.6067 86C99.8745 86 110 74.0428 110 61.4724C110 50.8948 103.096 41.8503 93.7378 38.4777C91.1297 37.5579 88.8285 36.7914 88.8285 32.3458C88.8285 26.6738 93.1241 18.2424 107.852 6.13191Z" fill="#0e1b4d0a">
+</path> 
+</svg> 
+</div> 
+<div class="rce-flex" style="width: 100%; margin-top:-90px"> 
+<div data-title="image" id="rce_section_1_3_3_2" class="rce-element rce-image" style="width: 60px; height: 60px;" data-image_type="img"> 
+<div class="rce-image-inner" style="overflow: hidden; background-image: url(&quot;https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; border-radius: 50%; background-color: rgb(204, 204, 204);"> 
+<img src="https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png" class="mCS_img_loaded"> 
+</div> 
+</div> 
+</div> 
+<div data-title="text" id="rce_section_1_3_3_3" class="rce-text-400 rce-element rce-text" style="font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;">Anonymous
+</div> 
+<div data-title="text" id="rce_section_1_3_3_4" class="rce-text-400 rce-element rce-text" style="font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;"> Happy Client 
+</div> 
+<div data-title="text" id="rce_section_1_3_3_1" class="rce-text-800 rce-element rce-text" style="font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;"> “Everyone working in the office is very knowledgeable about all types of dental work and options for your individual needs.” 
+</div> 
+<div class="rce-testimonial-star"> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+</div> 
+</div> 
+</div>
+</div>
+</div>
+<div class="slick-slide slick-current slick-active slick-center" data-slick-index="3" aria-hidden="false" role="tabpanel" id="slick-slide173" aria-describedby="slick-slide-control173">
+<div>
+<div class="rce-testimonial-item" style="padding: 20px; max-width: 540px; width: 100%; display: inline-block;"> 
+<div class="rce-vertical-box-start" style="justify-content: flex-start; grid-gap: 10px;   border-radius: 50px 0px 50px 0px; background-color: white; padding: 20px;"> 
+<div class="rce-flex-start"> 
+<svg width="60" height="86" viewBox="0 0 110 86" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+<path d="M46.9456 6.13191L42.9568 0C15.3417 18.549 0 41.0838 0 59.6328C0 77.5686 13.1939 86 24.3933 86C38.5077 86 48.4798 74.0428 48.4798 61.4724C48.4798 50.8948 41.7294 41.8503 32.6778 38.4777C30.0697 37.5579 27.6151 36.7914 27.6151 32.3458C27.6151 26.6738 31.7573 18.2424 46.9456 6.13191ZM107.852 6.13191L103.863 0C76.5551 18.549 60.9066 41.0838 60.9066 59.6328C60.9066 77.5686 74.4073 86 85.6067 86C99.8745 86 110 74.0428 110 61.4724C110 50.8948 103.096 41.8503 93.7378 38.4777C91.1297 37.5579 88.8285 36.7914 88.8285 32.3458C88.8285 26.6738 93.1241 18.2424 107.852 6.13191Z" fill="#0e1b4d0a">
+</path> 
+</svg> 
+</div> 
+<div class="rce-flex" style="width: 100%; margin-top:-90px"> 
+<div data-title="image" id="rce_section_1_3_4_2" class="rce-element rce-image" style="width: 60px; height: 60px;" data-image_type="img"> 
+<div class="rce-image-inner" style="overflow: hidden; background-image: url(&quot;https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; border-radius: 50%; background-color: rgb(204, 204, 204);"> 
+<img src="https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png" class="mCS_img_loaded"> 
+</div> 
+</div> 
+</div> 
+<div data-title="text" id="rce_section_1_3_4_3" class="rce-text-400 rce-element rce-text" style="font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;">Anonymous
+</div> 
+<div data-title="text" id="rce_section_1_3_4_4" class="rce-text-400 rce-element rce-text" style="font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;"> Happy Client 
+</div> 
+<div data-title="text" id="rce_section_1_3_4_1" class="rce-text-800 rce-element rce-text" style="font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;"> “Everyone working in the office is very knowledgeable about all types of dental work and options for your individual needs.” 
+</div> 
+<div class="rce-testimonial-star"> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+</div> 
+</div> 
+</div>
+</div>
+</div>
+<div class="slick-slide slick-cloned slick-active" data-slick-index="4" aria-hidden="false" tabindex="-1">
+<div>
+<div class="rce-testimonial-item" style="padding: 20px; max-width: 540px; width: 100%; display: inline-block;"> 
+<div class="rce-vertical-box-start" style="justify-content: flex-start; grid-gap: 10px;  border-radius: 50px 0px 50px 0px; background-color: white; padding: 20px;"> 
+<div class="rce-flex-start"> 
+<svg width="60" height="86" viewBox="0 0 110 86" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+<path d="M46.9456 6.13191L42.9568 0C15.3417 18.549 0 41.0838 0 59.6328C0 77.5686 13.1939 86 24.3933 86C38.5077 86 48.4798 74.0428 48.4798 61.4724C48.4798 50.8948 41.7294 41.8503 32.6778 38.4777C30.0697 37.5579 27.6151 36.7914 27.6151 32.3458C27.6151 26.6738 31.7573 18.2424 46.9456 6.13191ZM107.852 6.13191L103.863 0C76.5551 18.549 60.9066 41.0838 60.9066 59.6328C60.9066 77.5686 74.4073 86 85.6067 86C99.8745 86 110 74.0428 110 61.4724C110 50.8948 103.096 41.8503 93.7378 38.4777C91.1297 37.5579 88.8285 36.7914 88.8285 32.3458C88.8285 26.6738 93.1241 18.2424 107.852 6.13191Z" fill="#0e1b4d0a">
+</path> 
+</svg> 
+</div> 
+<div class="rce-flex" style="width: 100%; margin-top:-90px"> 
+<div data-title="image" id="" class="rce-element rce-image" style="width: 60px; height: 60px;" data-image_type="img"> 
+<div class="rce-image-inner" style="overflow: hidden; background-image: url(&quot;https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; border-radius: 50%; background-color: rgb(204, 204, 204);"> 
+<img src="https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png" class="mCS_img_loaded"> 
+</div> 
+</div> 
+</div> 
+<div data-title="text" id="" class="rce-text-400 rce-element rce-text" style="font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;">Anonymous
+</div> 
+<div data-title="text" id="" class="rce-text-400 rce-element rce-text" style="font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;"> Happy Client 
+</div> 
+<div data-title="text" id="" class="rce-text-800 rce-element rce-text" style="font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;" data-ai_category_type="testimonial2_text">I love how Tech House combines tech and music in one platform. It's like a dream come true for a gadget geek like me.
+</div>
+<div class="rce-flex" style="width:100%;">
+                        
+<div data-title="icon" id="" class="rce-element rce-icon" style="width:50px; height:50px; font-size: 50px;">
+                            
+<div class="rce-icon-ele rce-icon-inner">
+                                
+<i class="fa fa-star">
+</i>
+                            
+</div>
+                        
+</div>
+
+                    
+</div> 
+<div class="rce-testimonial-star"> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+</div> 
+</div> 
+</div>
+</div>
+</div>
+<div class="slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" tabindex="-1">
+<div>
+<div class="rce-testimonial-item" style="padding: 20px; max-width: 540px; width: 100%; display: inline-block;"> 
+<div class="rce-vertical-box-start" style="justify-content: flex-start; grid-gap: 10px;   border-radius: 50px 0px 50px 0px; background-color: white; padding: 20px;"> 
+<div class="rce-flex-start"> 
+<svg width="60" height="86" viewBox="0 0 110 86" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+<path d="M46.9456 6.13191L42.9568 0C15.3417 18.549 0 41.0838 0 59.6328C0 77.5686 13.1939 86 24.3933 86C38.5077 86 48.4798 74.0428 48.4798 61.4724C48.4798 50.8948 41.7294 41.8503 32.6778 38.4777C30.0697 37.5579 27.6151 36.7914 27.6151 32.3458C27.6151 26.6738 31.7573 18.2424 46.9456 6.13191ZM107.852 6.13191L103.863 0C76.5551 18.549 60.9066 41.0838 60.9066 59.6328C60.9066 77.5686 74.4073 86 85.6067 86C99.8745 86 110 74.0428 110 61.4724C110 50.8948 103.096 41.8503 93.7378 38.4777C91.1297 37.5579 88.8285 36.7914 88.8285 32.3458C88.8285 26.6738 93.1241 18.2424 107.852 6.13191Z" fill="#0e1b4d0a">
+</path> 
+</svg> 
+</div> 
+<div class="rce-flex" style="width: 100%; margin-top:-90px"> 
+<div data-title="image" id="" class="rce-element rce-image" style="width: 60px; height: 60px;" data-image_type="img"> 
+<div class="rce-image-inner" style="overflow: hidden; background-image: url(&quot;https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; border-radius: 50%; background-color: rgb(204, 204, 204);"> 
+<img src="https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png" class="mCS_img_loaded"> 
+</div> 
+</div> 
+</div> 
+<div data-title="text" id="" class="rce-text-400 rce-element rce-text" style="font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;">Anonymous
+</div> 
+<div data-title="text" id="" class="rce-text-400 rce-element rce-text" style="font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;"> Happy Client 
+</div> 
+<div data-title="text" id="" class="rce-text-800 rce-element rce-text" style="font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;" data-ai_category_type="testimonial3_text">The customer support at Tech House is top-notch. They were quick to resolve any issues I had and ensured a smooth shopping experience.
+</div> 
+<div class="rce-testimonial-star"> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+</div> 
+</div> 
+</div>
+</div>
+</div>
+<div class="slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" tabindex="-1">
+<div>
+<div class="rce-testimonial-item" style="padding: 20px; max-width: 540px; width: 100%; display: inline-block;"> 
+<div class="rce-vertical-box-start" style="justify-content: flex-start; grid-gap: 10px;   border-radius: 50px 0px 50px 0px; background-color: white; padding: 20px;"> 
+<div class="rce-flex-start"> 
+<svg width="60" height="86" viewBox="0 0 110 86" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+<path d="M46.9456 6.13191L42.9568 0C15.3417 18.549 0 41.0838 0 59.6328C0 77.5686 13.1939 86 24.3933 86C38.5077 86 48.4798 74.0428 48.4798 61.4724C48.4798 50.8948 41.7294 41.8503 32.6778 38.4777C30.0697 37.5579 27.6151 36.7914 27.6151 32.3458C27.6151 26.6738 31.7573 18.2424 46.9456 6.13191ZM107.852 6.13191L103.863 0C76.5551 18.549 60.9066 41.0838 60.9066 59.6328C60.9066 77.5686 74.4073 86 85.6067 86C99.8745 86 110 74.0428 110 61.4724C110 50.8948 103.096 41.8503 93.7378 38.4777C91.1297 37.5579 88.8285 36.7914 88.8285 32.3458C88.8285 26.6738 93.1241 18.2424 107.852 6.13191Z" fill="#0e1b4d0a">
+</path> 
+</svg> 
+</div> 
+<div class="rce-flex" style="width: 100%; margin-top:-90px"> 
+<div data-title="image" id="" class="rce-element rce-image" style="width: 60px; height: 60px;" data-image_type="img"> 
+<div class="rce-image-inner" style="overflow: hidden; background-image: url(&quot;https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; border-radius: 50%; background-color: rgb(204, 204, 204);"> 
+<img src="https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png" class="mCS_img_loaded"> 
+</div> 
+</div> 
+</div> 
+<div data-title="text" id="" class="rce-text-400 rce-element rce-text" style="font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;">Anonymous
+</div> 
+<div data-title="text" id="" class="rce-text-400 rce-element rce-text" style="font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;"> Happy Client 
+</div> 
+<div data-title="text" id="" class="rce-text-800 rce-element rce-text" style="font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;"> “Everyone working in the office is very knowledgeable about all types of dental work and options for your individual needs.” 
+</div> 
+<div class="rce-testimonial-star"> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+</div> 
+</div> 
+</div>
+</div>
+</div>
+<div class="slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" tabindex="-1">
+<div>
+<div class="rce-testimonial-item" style="padding: 20px; max-width: 540px; width: 100%; display: inline-block;"> 
+<div class="rce-vertical-box-start" style="justify-content: flex-start; grid-gap: 10px;   border-radius: 50px 0px 50px 0px; background-color: white; padding: 20px;"> 
+<div class="rce-flex-start"> 
+<svg width="60" height="86" viewBox="0 0 110 86" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+<path d="M46.9456 6.13191L42.9568 0C15.3417 18.549 0 41.0838 0 59.6328C0 77.5686 13.1939 86 24.3933 86C38.5077 86 48.4798 74.0428 48.4798 61.4724C48.4798 50.8948 41.7294 41.8503 32.6778 38.4777C30.0697 37.5579 27.6151 36.7914 27.6151 32.3458C27.6151 26.6738 31.7573 18.2424 46.9456 6.13191ZM107.852 6.13191L103.863 0C76.5551 18.549 60.9066 41.0838 60.9066 59.6328C60.9066 77.5686 74.4073 86 85.6067 86C99.8745 86 110 74.0428 110 61.4724C110 50.8948 103.096 41.8503 93.7378 38.4777C91.1297 37.5579 88.8285 36.7914 88.8285 32.3458C88.8285 26.6738 93.1241 18.2424 107.852 6.13191Z" fill="#0e1b4d0a">
+</path> 
+</svg> 
+</div> 
+<div class="rce-flex" style="width: 100%; margin-top:-90px"> 
+<div data-title="image" id="" class="rce-element rce-image" style="width: 60px; height: 60px;" data-image_type="img"> 
+<div class="rce-image-inner" style="overflow: hidden; background-image: url(&quot;https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; border-radius: 50%; background-color: rgb(204, 204, 204);"> 
+<img src="https://marketingblocks.s3.amazonaws.com/public/upload/(4)image_name (3).png" class="mCS_img_loaded"> 
+</div> 
+</div> 
+</div> 
+<div data-title="text" id="" class="rce-text-400 rce-element rce-text" style="font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;">Anonymous
+</div> 
+<div data-title="text" id="" class="rce-text-400 rce-element rce-text" style="font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;"> Happy Client 
+</div> 
+<div data-title="text" id="" class="rce-text-800 rce-element rce-text" style="font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;"> “Everyone working in the office is very knowledgeable about all types of dental work and options for your individual needs.” 
+</div> 
+<div class="rce-testimonial-star"> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+<i class="fa fa-star">
+</i> 
+</div> 
+</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+<ul class="slick-dots" style="" role="tablist">
+<li class="" role="presentation">
+<button type="button" role="tab" id="slick-slide-control170" aria-controls="slick-slide170" aria-label="1 of 2" tabindex="-1">1
+</button>
+</li>
+<li role="presentation" class="">
+<button type="button" role="tab" id="slick-slide-control171" aria-controls="slick-slide171" aria-label="2 of 2" tabindex="-1">2
+</button>
+</li>
+<li role="presentation" class="">
+<button type="button" role="tab" id="slick-slide-control172" aria-controls="slick-slide172" aria-label="3 of 2" tabindex="-1">3
+</button>
+</li>
+<li role="presentation" class="slick-active">
+<button type="button" role="tab" id="slick-slide-control173" aria-controls="slick-slide173" aria-label="4 of 2" tabindex="0" aria-selected="true">4
+</button>
+</li>
+</ul>
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+<div class="rce-insert-line rce-insert-line-bottom">
+</div>
+
+</div>
+<div data-title="section" id="rce_section_4" class="rce-section" data-desktop_bg_img="none" data-desktop_bg_color="#1E2833">    
+<div class="container">        
+<div class="row">            
+<div class="col-md-12">            	
+<div data-title="text" id="rce_section_4_1" class="rce-text-500 rce-element rce-text">            		Are you ready?		        
+</div>		        
+<div data-title="text" id="rce_section_4_2" class="rce-text-800 rce-element rce-text rce-n-ai" data-ai_type="Website Bio">With a wide range of products from renowned brands, you can trust that you'll find only the highest quality items on our platform
+</div>		        
+<form method="post" class="rce-form rce-signup-form" id="rce_section_4_3_form" data-desktop_style="margin-top: 30px;max-width: 500px;margin: 0px auto;display: block; margin-top: 30px;">		            
+<input type="hidden" name="_token" value="YNuQqTJz4YeorQ8CTSYVfszF45Ry34dgyC3dhmf4">		            
+<div class="rce-custom-field" style="display: none;">
+</div>
+<div class="rce-flex">		                
+<button type="button" data-title="signup_btn" id="rce_section_4_3" class="rce-element rce-button rce-signup-btn rce-popup-signup-btn for-device" data-type="popup_form">
+<span contenteditable="true">Contact Us
+</span>
+</button>		            
+</div>		        
+</form>            
+</div>            
+<div class="col-md-12 col-xs-12">            	
+<div class="" id="rce_section_4_8">            			                
+<div data-title="link_item" id="rce_section_4_3_1" class="rce-icon-title-ele rce-element rce-menu-item">	                    
+<div class="rce-icon-ele rce-hide-icon rce-menu-item-icon">
+</div>	                    
+<div class="rce-show-title rce-title-ele rce-menu-item-text">Product
+</div>	                
+</div>	                
+<div data-title="link_item" id="rce_section_4_3_3" class="rce-icon-title-ele rce-element rce-menu-item">	                    
+<div class="rce-icon-ele rce-hide-icon rce-menu-item-icon">
+</div>	                    
+<div class="rce-show-title rce-title-ele rce-menu-item-text">About
+</div>	                
+</div>	                
+<div data-title="link_item" id="rce_section_4_3_4" class="rce-icon-title-ele rce-element rce-menu-item">	                    
+<div class="rce-icon-ele rce-hide-icon rce-menu-item-icon">
+</div>	                    
+<div class="rce-show-title rce-title-ele rce-menu-item-text">Contact
+</div>	                
+</div>                
+</div>            
+</div>            
+<div class="col-md-12 col-xs-12">            	
+<div data-title="text" id="rce_section_4_6" class="rce-element rce-text rce-text-500">		                Copyright © 2024. Tech House Outlet
+</div>            
+</div>        
+</div>    
+</div>    
+    
+
+                
+<div class="rce-insert-line rce-insert-line-bottom">
+</div>
+            
+</div>
+<input type="hidden" value="desktop" id="rce_device_name">
+
+<div class="rce-device-loader" style="display: none; left: 900px; width: 428px;">
+
+<img src="https://app.marketingblocks.ai/image/loader.gif" class="mCS_img_loaded">
+
+</div>				
+			
+<div id="page_style_wrap" data-desktop_style="display:none;">
+<style type="text/css" id="rce_section_6_desktop_normal"> #rce_section_6{clip-path:url(#rce_section_6_top_clip_desktop);}
+</style>
+<style type="text/css" id="rce_section_9_desktop_normal"> #rce_section_9{clip-path:url(#rce_section_9_top_clip_desktop);}
+</style>
+</div>				
+			
+<style>
+#signup_modal{ position: fixed; bottom: unset; top: calc(50vh - 280px); padding: 60px 80px; display: none;}#rce_signup_ele_popup_title{ font-size: 36px; line-height: 40px; font-weight: bold;}#rce_signup_ele_popup_subtitle{ text-align: center;font-size: 18px; line-height: 26px;margin-top: 20px;}#rce_signup_ele_popup_submit{ width: 100%; height: 50px; background-color: rgb(255, 130, 1); font-size: 26px; font-weight: bold; color: white;}#rce_signup_ele_popup_facebook{ width: 100%; height: 50px; background-color: #3b5998; display:none; margin-bottom:20px; font-size: 26px; font-weight: bold; color: white;}#rce_signup_ele_popup_subtitle_1{ font-size: 14px;margin-bottom: 5px; text-align:center;}#rce_exit_popup_modal{ padding: 0px; position: fixed; font-size: 0px; bottom: unset; border-radius: 10px; display: none;}#mCSB_25{ max-height: 448px;}#mCSB_25_container{ position:relative; top:0; left:0;}#mCSB_20{ max-height: 448px;}#mCSB_20_container{ position:relative; top:0; left:0;}#mCSB_20{ max-height: 448px;}#mCSB_20_container{ position:relative; top:0; left:0;}#mCSB_20{ max-height: 448px;}#mCSB_20_container{ position:relative; top:0; left:0;}#mCSB_20{ max-height: 448px;}#mCSB_20_container{ position:relative; top:0; left:0;}#rce_exit_popup_modal_7{ display:block;}#rce_exit_popup_modal_1{ width: 300px;}#rce_exit_popup_modal_2{ font-family: Montserrat; color:#0361d2; font-size: 33px;line-height: 40px;margin-top: 24px; font-weight: bold; text-align:center;}#rce_exit_popup_modal_3{ font-family: Montserrat; color:#363d62; font-size: 31px;line-height: 40px;margin-top: 24px; text-align: center;}#rce_exit_popup_modal_4{ font-family: Montserrat; color:#363d62; font-size: 16px;line-height: 24px;margin-top: 24px; text-align: center;}#rce_exit_popup_modal_5{ color: white;background-color: #00daba;width: 100%;text-transform: uppercase;font-size: 16px;height: unset;padding: 10px 20px; border-radius: 10px;}#rce_exit_popup_modal_6{ color: white;background-color: #1495ec;width: 100%;text-transform: uppercase;font-size: 16px;height: unset;padding: 10px 20px;border-radius: 10px;}#mCSB_20_scrollbar_vertical{ display: none; opacity: 0;}#mCSB_20_dragger_vertical{ position: absolute; min-height: 30px; top: 0px;}#mCSB_20_scrollbar_vertical{ opacity: 0;}#mCSB_20_dragger_vertical{ position:absolute;}#mCSB_20_scrollbar_vertical{ opacity: 0;}#mCSB_20_dragger_vertical{ position:absolute;}#mCSB_20_scrollbar_vertical{ opacity: 0;}#mCSB_20_dragger_vertical{ position:absolute;}#mCSB_25_scrollbar_vertical{ display: none; opacity: 0;}#mCSB_25_dragger_vertical{ position: absolute; min-height: 30px; top: 0px;}#rce_page_element_tool_wrap{ display:none;}#rce_section_5{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); padding: 20px 40px; filter: unset;}#rce_section_5_1{ height:1.6em; font-weight: bold; font-size:32px;}#rce_section_5_3{ justify-content: center;}#rce_section_5_3_1{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);}#rce_section_5_3_3{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);}#rce_section_5_3_4{ font-size: 16px; text-align:left; color: #1E2833; font-family: 'Poppins';}#rce_section_5_3_5{ width: 100%; justify-content: flex-end;}#rce_section_5_3_5_1_form{ width: fit-content;}#rce_section_5_3_5_1{ color: rgb(255, 255, 255); background-color: rgba(14, 27, 77, 0.8); width: 200px; min-height: 50px; border: 1px solid rgba(14, 27, 77, 0.8); font-size: 16px; border-radius: 50px; fill: rgb(0, 0, 0);}#rce_section_2{ background-image: linear-gradient(#0e1b4d, #0e1b4d); padding-bottom: 0px; filter: unset;}#rce_section_2_1{ display: flex;align-items: flex-start;justify-content: center;flex-flow: column;padding: 20px;height: 100%;background-color: transparent;padding: 40px; grid-gap: 20px;}#rce_section_2_1_2{ font-size: 48px; line-height: 56px; text-align: left; font-family: Poppins; color: rgb(255, 255, 255); text-transform: capitalize; font-weight: 700;}#rce_section_2_1_3{ font-size: 18px; line-height: 24px; text-align:left; font-family: 'Poppins'; color: rgba(255, 255, 255, 0.8);}#rce_section_2_1_4{ text-align: left;  width: 100%;}#rce_section_2_1_4_1_direct_name{ display: none;}#rce_section_2_1_4_1_direct_email{ display: none;}#rce_section_2_1_4_1{ background-color: rgb(253, 210, 71); color: rgb(255, 255, 255); font-size: 18px; padding: 0px 20px; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0); animation-duration: 1.1s;}#rce_section_2_1_5{ position: absolute; left: 0px; top: 0px; bottom: -100px; right: 0px;}#rce_section_8{ background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://marketingblocks.s3.amazonaws.com/public/upload/Website-banner.png"); padding: 124px 0px 80px; position: relative; filter: unset; height: 572px; justify-content: flex-end;}#rce_section_8_2{ font-size: 48px; line-height: 56px; font-weight: bold; color: rgb(255, 255, 255); font-family: Poppins; width: auto; text-transform: capitalize; text-align: left; margin: 0px;}#rce_section_8_3{ font-size: 18px; line-height: 24px;text-align:left; font-family: 'Poppins'; color: white; margin:20px 0px; text-transform: capitalize}#rce_section_8_1_4{ text-align: left; width:100%;}#rce_section_8_1_4_1{ background-color: rgb(236, 48, 56); color: rgb(255, 255, 255); font-size: 18px; padding: 10px 20px; height: unset; line-height: 1.2em; font-family: Poppins; width: 200px; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);}#rce_section_12{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); filter: unset;}#rce_section_12_2{ height: auto; display: grid; grid-template-columns: 40% auto; grid-gap: 40px; width: 100%; max-width: 600px; padding: 10px; border: 1px solid #E5E5E5; border-radius:40px;}#rce_section_12_2_5{ width: 100%; height: 100%;}#rce_section_12_2_1{ font-size: 16px; line-height: 20px;text-align:left; font-family: 'Poppins'; color: #8F8F8F; font-weight:500;}#rce_section_12_2_2{ font-size: 30px; line-height: 40px;text-align:left; font-family: 'Poppins'; color: #1C1C1C; font-weight:600; }#rce_section_12_2_3{ background-color: rgba(14, 27, 77, 0.8); color: rgb(255, 255, 255); border: 1px solid rgba(14, 27, 77, 0.8); border-radius: 25px; padding: 10px 40px; margin-top: 20px; fill: rgb(0, 0, 0);}#rce_section_12_1{ height: auto; display: grid; grid-template-columns: 40% auto; grid-gap: 40px; width: 100%; max-width: 600px; padding: 10px; border: 1px solid #E5E5E5; border-radius:40px;}#rce_section_12_1_5{ width: 100%; height: 100%;}#rce_section_12_1_1{ font-size: 16px; line-height: 20px;text-align:left; font-family: 'Poppins'; color: #8F8F8F; font-weight:500;}#rce_section_12_1_2{ font-size: 30px; line-height: 40px;text-align:left; font-family: 'Poppins'; color: #1C1C1C; font-weight:600; }#rce_section_12_1_3{ background-color: rgba(14, 27, 77, 0.8); color: rgb(255, 255, 255); border: 1px solid rgba(14, 27, 77, 0.8); border-radius: 25px; padding: 10px 40px; margin-top: 20px; fill: rgb(0, 0, 0);}#rce_section_12_4{ height: auto; display: grid; grid-template-columns: 40% auto; grid-gap: 40px; width: 100%; max-width: 600px; padding: 10px; border: 1px solid #E5E5E5; border-radius:40px;}#rce_section_12_4_5{ width: 100%; height: 100%; padding-top: 85px;}#rce_section_12_4_1{ font-size: 16px; line-height: 20px;text-align:left; font-family: 'Poppins'; color: #8F8F8F; font-weight:500;}#rce_section_12_4_2{ font-size: 30px; line-height: 40px;text-align:left; font-family: 'Poppins'; color: #1C1C1C; font-weight:600; }#rce_section_12_4_3{ background-color: rgba(14, 27, 77, 0.8); color: rgb(255, 255, 255); border: 1px solid rgba(14, 27, 77, 0.8); border-radius: 25px; padding: 10px 40px; margin-top: 20px; fill: rgb(0, 0, 0);}#rce_section_12_5{ height: auto; display: grid; grid-template-columns: 40% auto; grid-gap: 40px; width: 100%; max-width: 600px; padding: 10px; border: 1px solid #E5E5E5; border-radius:40px;}#rce_section_12_5_1{ width: 100%; height: 100%;}#rce_section_12_5_2{ font-size: 16px; line-height: 20px;text-align:left; font-family: 'Poppins'; color: #8F8F8F; font-weight:500;}#rce_section_12_5_3{ font-size: 30px; line-height: 40px;text-align:left; font-family: 'Poppins'; color: #1C1C1C; font-weight:600; }#rce_section_12_5_4{ background-color: rgba(14, 27, 77, 0.8); color: rgb(255, 255, 255); border: 1px solid rgba(14, 27, 77, 0.8); border-radius: 25px; padding: 10px 40px; margin-top: 20px; fill: rgb(0, 0, 0);}#rce_section_7{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); filter: unset;}#rce_section_7_6{ width:  100%;}#rce_section_7_1{ color:#8F8F8F; font-size: 18px; line-height: 24px; margin-bottom: 30px; font-family:'Poppins'; text-transform: uppercase;}#rce_section_7_2{ color:#1C1C1C; font-size: 42px; line-height: 52px; margin-bottom: 20px; font-family:'Poppins'; text-transform: capitalize; font-weight: bold; }#rce_section_7_3{ text-align: left; margin-top:40px;}#rce_section_7_3_1{ background-color: rgb(255, 221, 169); color: rgb(28, 28, 28); font-size: 18px; padding: 0px 20px; height: 50px; width: 200px; border-radius: 25px; border-color: rgb(28, 28, 28); fill: rgb(0, 0, 0);}#rce_section_6{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); filter: unset;}#rce_section_6_1{ display: flex;align-items: flex-start;justify-content: center;flex-flow: column;padding: 20px;height: 100%;}#rce_section_6_1_1{ font-size: 48px; color: #3F3F3F; font-weight: bold; font-family: 'Poppins'; width: 100%; line-height:52px; margin-top: 20px; text-transform: capitalize;}#rce_section_6_1_3{ text-align: left;  width: 100%; margin-top: 40px;}#rce_section_6_1_3_1{ background-color: rgba(14, 27, 77, 0.8); color: rgb(255, 255, 255); font-size: 18px; padding: 0px 20px; border-radius: 25px; height: 50px; width: 200px; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);}#rce_section_6_1_4{ width: 100%; height: 100%;}#rce_section_3{ background-image: linear-gradient(rgb(249, 249, 249), rgb(249, 249, 249)); filter: unset;}#rce_section_3_1{ font-size: 40px; margin-top: 20px; text-align: center; font-weight: 700; font-family: Poppins; filter: unset;}#rce_section_10{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); background-position: center top; padding-top: 60px; padding-bottom: 80px; filter: unset;}#rce_section_10_1{ border-radius: 20px; background-color:#0e1b4d; padding:40px;}#rce_section_10_1_1{ color: white; font-size: 36px; text-align: center; line-height: 46px; margin-top: 20px; font-weight: bold; text-transform:capitalize}#rce_section_10_1_3_form{ margin-top: 50px;max-width: 500px;margin: 0px auto;display: block; margin-top: 40px;}#rce_section_10_3_1{ background-color: rgb(255, 221, 169); color: rgb(28, 28, 28); padding: 0px 20px; height: 50px; width: 240px; border-radius: 25px; border-color: rgb(28, 28, 28); fill: rgb(0, 0, 0);}#rce_section_1{ padding: 60px 0px; filter: unset; background-image: linear-gradient(rgba(14, 27, 77, 0.04), rgba(14, 27, 77, 0.04));}#rce_section_1_1{ font-size: 16px; line-height: 24px; color: #0e1b4d; font-family: 'Poppins'; width: auto; text-align: center; text-transform: capitalize;}#rce_section_1_2{ font-size: 36px; line-height: 58px; text-align:left; font-family: 'Poppins'; color: #001431; text-align: center; font-weight:bold; text-transform: capitalize;}#rce_section_4{ background-image: linear-gradient(rgb(30, 40, 51), rgb(30, 40, 51)); filter: unset;}#rce_section_4_1{ color:#bababa; font-size: 16px; font-family: 'Poppins'; text-align: center; line-height:24px;}#rce_section_4_2{ color: white; font-size: 16px; font-family: 'Poppins'; text-align: center; margin-top: 30px;  line-height: 1.6;}#rce_section_4_3_form{ margin-top: 30px;max-width: 500px;margin: 0px auto;display: block; margin-top: 30px;}#rce_section_4_3{ color: rgb(30, 40, 51); background-color: rgb(255, 255, 255); width: 200px; min-height: 50px; border: 1px solid rgb(30, 40, 51); font-size: 16px; fill: rgb(0, 0, 0);}#rce_section_4_8{ display: flex; align-items: center; justify-content: center; grid-gap:40px; margin: 20px 0; }#rce_section_4_3_1{ font-size: 14px; text-align: left; color: rgb(255, 255, 255); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);}#rce_section_4_3_3{ font-size: 14px; text-align: left; color: rgb(255, 255, 255); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);}#rce_section_4_3_4{ font-size: 14px; text-align: left; color: rgb(255, 255, 255); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);}#rce_section_4_6{ font-size: 14px; text-align:center; color: #bababa; font-family: 'Poppins';}#page_style_wrap{ display:none;}@media(max-width: 2124px){ #rce_signup_ele_popup_title{ font-size: 36px; line-height: 40px; font-weight: bold;} }
+@media(max-width: 770px){ #rce_signup_ele_popup_title{ font-size: 36px; line- font-weight: bold;} }
+@media(max-width: 430px){ #rce_signup_ele_popup_title{ font-size: 36px; line-height: 40px; font-weight: bold;} }
+@media(max-width: 2124px){ #rce_signup_ele_popup_subtitle{ text-align: center;font-size: 18px; line-height: 26px;margin-top: 20px;} }
+@media(max-width: 770px){ #rce_signup_ele_popup_subtitle{ text-align: center;font-size: 18px; line-} }
+@media(max-width: 430px){ #rce_signup_ele_popup_subtitle{ text-align: center;font-size: 18px; line-height: 26px;margin-top: 20px;} }
+@media(max-width: 2124px){ #rce_signup_ele_popup_submit{ width: 100%; height: 50px; background-color: rgb(255, 130, 1); font-size: 26px; font-weight: bold; color: white;} }
+@media(max-width: 770px){ #rce_signup_ele_popup_submit{   background-color: rgb(255, 130, 1); font-size: 26px; font-weight: bold; color: white;} }
+@media(max-width: 430px){ #rce_signup_ele_popup_submit{ width: 100%; height: 50px; background-color: rgb(255, 130, 1); font-size: 26px; font-weight: bold; color: white;} }
+@media(max-width: 2124px){ #rce_signup_ele_popup_facebook{ width: 100%; height: 50px; background-color: #3b5998; display:none; margin-bottom:20px; font-size: 26px; font-weight: bold; color: white;} }
+@media(max-width: 770px){ #rce_signup_ele_popup_facebook{   background-color: #3b5998; display:none;  font-size: 26px; font-weight: bold; color: white;} }
+@media(max-width: 430px){ #rce_signup_ele_popup_facebook{ width: 100%; height: 50px; background-color: #3b5998; display:none; margin-bottom:20px; font-size: 26px; font-weight: bold; color: white;} }
+@media(max-width: 2124px){ #rce_signup_ele_popup_subtitle_1{ font-size: 14px;margin-bottom: 5px; text-align:center;} }
+@media(max-width: 770px){ #rce_signup_ele_popup_subtitle_1{ font-size: 14px; text-align:center;} }
+@media(max-width: 430px){ #rce_signup_ele_popup_subtitle_1{ font-size: 14px;margin-bottom: 5px; text-align:center;} }
+@media(max-width: 2124px){ #rce_exit_popup_modal_7{ display:block;} }
+@media(max-width: 770px){ #rce_exit_popup_modal_7{ display:block;} }
+@media(max-width: 430px){ #rce_exit_popup_modal_7{ display:none;} }
+@media(max-width: 2124px){ #rce_exit_popup_modal_1{ width: 300px;} }
+@media(max-width: 430px){ #rce_exit_popup_modal_1{ width: 300px;} }
+@media(max-width: 2124px){ #rce_exit_popup_modal_2{ font-family: Montserrat; color:#0361d2; font-size: 33px;line-height: 40px;margin-top: 24px; font-weight: bold; text-align:center;} }
+@media(max-width: 770px){ #rce_exit_popup_modal_2{ font-family: Montserrat; color:#0361d2; font-size: 33px;line- font-weight: bold; text-align:center;} }
+@media(max-width: 430px){ #rce_exit_popup_modal_2{ font-family: Montserrat; color:#0361d2; font-size: 33px;line-height: 40px;margin-top: 24px; font-weight: bold; text-align:center;} }
+@media(max-width: 2124px){ #rce_exit_popup_modal_3{ font-family: Montserrat; color:#363d62; font-size: 31px;line-height: 40px;margin-top: 24px; text-align: center;} }
+@media(max-width: 770px){ #rce_exit_popup_modal_3{ font-family: Montserrat; color:#363d62; font-size: 31px;line- text-align: center;} }
+@media(max-width: 430px){ #rce_exit_popup_modal_3{ font-family: Montserrat; color:#363d62; font-size: 31px;line-height: 40px;margin-top: 24px; text-align: center;} }
+@media(max-width: 2124px){ #rce_exit_popup_modal_4{ font-family: Montserrat; color:#363d62; font-size: 16px;line-height: 24px;margin-top: 24px; text-align: center;} }
+@media(max-width: 770px){ #rce_exit_popup_modal_4{ font-family: Montserrat; color:#363d62; font-size: 16px;line- text-align: center;} }
+@media(max-width: 430px){ #rce_exit_popup_modal_4{ font-family: Montserrat; color:#363d62; font-size: 16px;line-height: 24px;margin-top: 24px; text-align: center;} }
+@media(max-width: 2124px){ #rce_exit_popup_modal_5{ color: white;background-color: #00daba;width: 100%;text-transform: uppercase;font-size: 16px;height: unset;padding: 10px 20px; border-radius: 10px;} }
+@media(max-width: 770px){ #rce_exit_popup_modal_5{ color: white;background-color: #00daba;text-transform: uppercase;font-size: 16px; border-radius: 10px;} }
+@media(max-width: 430px){ #rce_exit_popup_modal_5{ color: white;background-color: #00daba;width: 100%;text-transform: uppercase;font-size: 16px;height: unset;padding: 10px 20px; border-radius: 10px;} }
+@media(max-width: 2124px){ #rce_exit_popup_modal_6{ color: white;background-color: #1495ec;width: 100%;text-transform: uppercase;font-size: 16px;height: unset;padding: 10px 20px;border-radius: 10px;} }
+@media(max-width: 770px){ #rce_exit_popup_modal_6{ color: white;background-color: #1495ec;text-transform: uppercase;font-size: 16px;border-radius: 10px;} }
+@media(max-width: 430px){ #rce_exit_popup_modal_6{ color: white;background-color: #1495ec;width: 100%;text-transform: uppercase;font-size: 16px;height: unset;padding: 10px 20px;border-radius: 10px;} }
+@media(max-width: 2124px){ #rce_section_5{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); padding: 20px 40px; filter: unset;} }
+@media(max-width: 770px){ #rce_section_5{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));  filter: unset;} }
+@media(max-width: 430px){ #rce_section_5{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));  filter: unset;} }
+@media(max-width: 2124px){ #rce_section_5_1{ height:1.6em; font-weight: bold; font-size:32px;} }
+@media(max-width: 770px){ #rce_section_5_1{  font-weight: bold; font-size:32px;} }
+@media(max-width: 430px){ #rce_section_5_1{ height: 1.6em; font-weight: bold; font-size: 32px; justify-content: center; padding-left: 11px;} }
+@media(max-width: 2124px){ #rce_section_5_3{ justify-content: center;} }
+@media(max-width: 770px){ #rce_section_5_3{ justify-content: center;} }
+@media(max-width: 430px){ #rce_section_5_3{ justify-content: center; top: 73.5938px;} }
+@media(max-width: 2124px){ #rce_section_5_3_1{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_5_3_1{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_5_3_1{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);} }
+@media(max-width: 2124px){ #rce_section_5_3_1:hover{ background-color:rgba(0, 0, 0, 0);border-color:rgb(30, 40, 51);color:rgb(30, 40, 51);} }
+@media(max-width: 2124px){ #rce_section_5_3_3{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_5_3_3{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_5_3_3{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);} }
+@media(max-width: 2124px){ #rce_section_5_3_3:hover{ background-color:rgba(0, 0, 0, 0);border-color:rgb(30, 40, 51);color:rgb(30, 40, 51);} }
+@media(max-width: 2124px){ #rce_section_5_3_4{ font-size: 16px; text-align:left; color: #1E2833; font-family: 'Poppins';} }
+@media(max-width: 770px){ #rce_section_5_3_4{ font-size: 16px; text-align:left; color: #1E2833; font-family: 'Poppins';} }
+@media(max-width: 430px){ #rce_section_5_3_4{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_5_3_4:hover{ background-color:rgba(0, 0, 0, 0);border-color:rgb(30, 40, 51);color:rgb(30, 40, 51);} }
+@media(max-width: 2124px){ #rce_section_5_3_5{ width: 100%; justify-content: flex-end;} }
+@media(max-width: 770px){ #rce_section_5_3_5{  justify-content: flex-end;} }
+@media(max-width: 430px){ #rce_section_5_3_5{  justify-content: flex-end;} }
+@media(max-width: 2124px){ #rce_section_5_3_5_1{ color: rgb(255, 255, 255); background-color: rgba(14, 27, 77, 0.8); width: 200px; min-height: 50px; border: 1px solid rgba(14, 27, 77, 0.8); font-size: 16px; border-radius: 50px; fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_5_3_5_1{ color: rgb(255, 255, 255); background-color: rgba(14, 27, 77, 0.8);  min- border: 1px solid rgba(14, 27, 77, 0.8); font-size: 16px; border-radius: 50px; fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_5_3_5_1{ color: rgb(255, 255, 255); background-color: rgba(14, 27, 77, 0.8); font-size: 16px; border-radius: 50px; fill: rgb(0, 0, 0); border-color: rgb(255, 255, 255); padding-top: 0px; margin-left: 0px;} }
+@media(max-width: 2124px){ #rce_section_5_3_5_1:hover{ background-color:#0e1b4d;border-color:#0e1b4d;color:white; border-radius: 50px;} }
+@media(max-width: 430px){ #rce_section_5_3_5_1:hover{ background-color:#0e1b4d;border-color:#0e1b4d;color:white; border-radius: 50px;} }
+@media(max-width: 2124px){ #rce_section_2{ background-image: linear-gradient(#0e1b4d, #0e1b4d); padding-bottom: 0px; filter: unset;} }
+@media(max-width: 770px){ #rce_section_2{ background-image: linear-gradient(#0e1b4d, #0e1b4d);  filter: unset;} }
+@media(max-width: 430px){ #rce_section_2{ background-image: linear-gradient(#0e1b4d, #0e1b4d); padding-bottom: 0px; } }
+@media(max-width: 2124px){ #rce_section_2_1{ display: flex;align-items: flex-start;justify-content: center;flex-flow: column;padding: 20px;height: 100%;background-color: transparent;padding: 40px; grid-gap: 20px;} }
+@media(max-width: 770px){ #rce_section_2_1{ display: flex;align-items: flex-start;justify-content: center;flex-flow: column;background-color: transparent; grid-gap: 20px;} }
+@media(max-width: 430px){ #rce_section_2_1{ display: flex;align-items: flex-start;justify-content: center;flex-flow: column;padding: 20px;height: 100%;background-color: transparent;padding: 40px; grid-gap: 20px;} }
+@media(max-width: 2124px){ #rce_section_2_1_2{ font-size: 48px; line-height: 56px; text-align: left; font-family: Poppins; color: rgb(255, 255, 255); text-transform: capitalize; font-weight: 700;} }
+@media(max-width: 770px){ #rce_section_2_1_2{ font-size: 32px; line-height: 40px; text-align: left; font-family: 'Poppins'; color: rgb(255, 255, 255); text-transform: capitalize;} }
+@media(max-width: 430px){ #rce_section_2_1_2{ font-size: 48px; line-height: 56px; text-align: left; font-family: Poppins; color: rgb(255, 255, 255); text-transform: capitalize; font-weight: 700;} }
+@media(max-width: 2124px){ #rce_section_2_1_3{ font-size: 18px; line-height: 24px; text-align:left; font-family: 'Poppins'; color: rgba(255, 255, 255, 0.8);} }
+@media(max-width: 770px){ #rce_section_2_1_3{ font-size: 18px; line- text-align:left; font-family: 'Poppins'; color: rgba(255, 255, 255, 0.8);} }
+@media(max-width: 430px){ #rce_section_2_1_3{ font-size: 18px; line-height: 24px; text-align:left; font-family: 'Poppins'; color: rgba(255, 255, 255, 0.8);} }
+@media(max-width: 2124px){ #rce_section_2_1_4_1_direct_name{ display: none;} }
+@media(max-width: 770px){ #rce_section_2_1_4_1_direct_name{ display: none;} }
+@media(max-width: 430px){ #rce_section_2_1_4_1_direct_name{ display: none;} }
+@media(max-width: 2124px){ #rce_section_2_1_4_1_direct_email{ display: none;} }
+@media(max-width: 770px){ #rce_section_2_1_4_1_direct_email{ display: none;} }
+@media(max-width: 430px){ #rce_section_2_1_4_1_direct_email{ display: none;} }
+@media(max-width: 2124px){ #rce_section_2_1_4_1{ background-color: rgb(253, 210, 71); color: rgb(255, 255, 255); font-size: 18px; padding: 0px 20px; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0); animation-duration: 1.1s;} }
+@media(max-width: 770px){ #rce_section_2_1_4_1{ background-color: rgb(253, 210, 71); color: rgb(255, 255, 255); font-size: 18px; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0); animation-duration: 1.1s;} }
+@media(max-width: 430px){ #rce_section_2_1_4_1{ background-color: rgb(253, 210, 71); color: rgb(255, 255, 255); font-size: 18px; padding: 0px 20px; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);} }
+@media(max-width: 2124px){ #rce_section_2_1_4_1:hover{ background-color: rgb(157 122 10); color:white;} }
+@media(max-width: 770px){ #rce_section_2_1_4_1:hover{ background-color: rgb(157 122 10); color:white;} }
+@media(max-width: 430px){ #rce_section_2_1_4_1:hover{ background-color: rgb(157 122 10); color:white;} }
+@media(max-width: 2124px){ #rce_section_2_1_5{ position: absolute; left: 0px; top: 0px; bottom: -100px; right: 0px;} }
+@media(max-width: 770px){ #rce_section_2_1_5{ position: absolute; left: 0px; top: 0px; bottom: -100px; right: 0px;} }
+@media(max-width: 430px){ #rce_section_2_1_5{ height:500px; width:100%;} }
+@media(max-width: 2124px){ #undefined{ height:200px; width:100%; background-color:white;} }
+@media(max-width: 770px){ #undefined{   background-color:white;} }
+@media(max-width: 430px){ #undefined{ display:none;} }
+@media(max-width: 2124px){ #rce_section_8{ background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://marketingblocks.s3.amazonaws.com/public/upload/Website-banner.png"); padding: 124px 0px 80px; position: relative; filter: unset; height: 572px; justify-content: flex-end;} }
+@media(max-width: 770px){ #rce_section_8{ background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://marketingblocks.s3.amazonaws.com/public/upload/Website-banner.png");  position: relative; filter: unset;} }
+@media(max-width: 430px){ #rce_section_8{ background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://marketingblocks.s3.amazonaws.com/public/upload/Website-banner.png");  position: relative; filter: unset;} }
+@media(max-width: 2124px){ #rce_section_8_2{ font-size: 48px; line-height: 56px; font-weight: bold; color: rgb(255, 255, 255); font-family: Poppins; width: auto; text-transform: capitalize; text-align: left; margin: 0px;} }
+@media(max-width: 770px){ #rce_section_8_2{ font-size: 48px; line- font-weight: bold; color: #fff; font-family: 'Poppins';  text-transform:capitalize;} }
+@media(max-width: 430px){ #rce_section_8_2{ font-size: 48px; line- font-weight: bold; color: #fff; font-family: 'Poppins';  text-transform:capitalize;} }
+@media(max-width: 2124px){ #rce_section_8_3{ font-size: 18px; line-height: 24px;text-align:left; font-family: 'Poppins'; color: white; margin:20px 0px; text-transform: capitalize} }
+@media(max-width: 770px){ #rce_section_8_3{ font-size: 18px; line-text-align:left; font-family: 'Poppins'; color: white;  text-transform: capitalize} }
+@media(max-width: 430px){ #rce_section_8_3{ font-size: 18px; line-text-align:left; font-family: 'Poppins'; color: white;  text-transform: capitalize} }
+@media(max-width: 2124px){ #rce_section_8_1_4{ text-align: left; width:100%;} }
+@media(max-width: 770px){ #rce_section_8_1_4{ text-align: left; } }
+@media(max-width: 430px){ #rce_section_8_1_4{ text-align: left; width:100%; margin-bottom: 50px;} }
+@media(max-width: 2124px){ #rce_section_8_1_4_1{ background-color: rgb(236, 48, 56); color: rgb(255, 255, 255); font-size: 18px; padding: 10px 20px; height: unset; line-height: 1.2em; font-family: Poppins; width: 200px; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_8_1_4_1{ background-color: rgb(236, 48, 56); color: rgb(255, 255, 255); font-size: 18px;   line- font-family: Poppins;  border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_8_1_4_1{ background-color: rgb(236, 48, 56); color: rgb(255, 255, 255); font-size: 18px; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);} }
+@media(max-width: 2124px){ #rce_section_8_1_4_1:hover{ background-color: rgb(143 26 31); color:white;} }
+@media(max-width: 430px){ #rce_section_8_1_4_1:hover{ background-color: rgb(143 26 31); color:white;} }
+@media(max-width: 2124px){ #rce_section_12{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); filter: unset;} }
+@media(max-width: 770px){ #rce_section_12{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); filter: unset;} }
+@media(max-width: 430px){ #rce_section_12{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); filter: unset;} }
+@media(max-width: 2124px){ #rce_section_12_2{ height: auto; display: grid; grid-template-columns: 40% auto; grid-gap: 40px; width: 100%; max-width: 600px; padding: 10px; border: 1px solid #E5E5E5; border-radius:40px;} }
+@media(max-width: 770px){ #rce_section_12_2{  display: grid; grid-template-columns: 40% auto; grid-gap: 40px;  max-  border: 1px solid #E5E5E5; border-radius:40px;} }
+@media(max-width: 430px){ #rce_section_12_2{  display: grid; grid-template-columns: 40% auto; grid-gap: 40px;  max-  border: 1px solid #E5E5E5; border-radius:40px;} }
+@media(max-width: 2124px){ #rce_section_12_2_5{ width: 100%; height: 100%;} }
+@media(max-width: 2124px){ #rce_section_12_2_1{ font-size: 16px; line-height: 20px;text-align:left; font-family: 'Poppins'; color: #8F8F8F; font-weight:500;} }
+@media(max-width: 770px){ #rce_section_12_2_1{ font-size: 16px; line-height: 20px;text-align:left; font-family: 'Poppins'; color: #8F8F8F; font-weight:500;} }
+@media(max-width: 430px){ #rce_section_12_2_1{ font-size: 16px; line-height: 18px;text-align:left; font-family: 'Poppins'; color: #8F8F8F; font-weight:500;} }
+@media(max-width: 2124px){ #rce_section_12_2_2{ font-size: 30px; line-height: 40px;text-align:left; font-family: 'Poppins'; color: #1C1C1C; font-weight:600; } }
+@media(max-width: 770px){ #rce_section_12_2_2{ font-size: 24px; line-height: 28px;text-align:left; font-family: 'Poppins'; color: #1C1C1C; font-weight:600; } }
+@media(max-width: 430px){ #rce_section_12_2_2{ font-size: 24px; line-height: 28px;text-align:left; font-family: 'Poppins'; color: #1C1C1C; font-weight:600; } }
+@media(max-width: 2124px){ #rce_section_12_2_3{ background-color: rgba(14, 27, 77, 0.8); color: rgb(255, 255, 255); border: 1px solid rgba(14, 27, 77, 0.8); border-radius: 25px; padding: 10px 40px; margin-top: 20px; fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_12_2_3{ background-color: rgba(14, 27, 77, 0.8); color: rgb(255, 255, 255); border: 1px solid rgba(14, 27, 77, 0.8); border-radius: 25px;   fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_12_2_3{ background-color: rgba(14, 27, 77, 0.8); color: rgb(255, 255, 255); border: 1px solid rgba(14, 27, 77, 0.8); border-radius: 25px;   fill: rgb(0, 0, 0);} }
+@media(max-width: 2124px){ #rce_section_12_2_3:hover{ color: white; background-color:#0e1b4d; border-color:#0e1b4d;} }
+@media(max-width: 2124px){ #rce_section_12_1{ height: auto; display: grid; grid-template-columns: 40% auto; grid-gap: 40px; width: 100%; max-width: 600px; padding: 10px; border: 1px solid #E5E5E5; border-radius:40px;} }
+@media(max-width: 770px){ #rce_section_12_1{  display: grid; grid-template-columns: 40% auto; grid-gap: 40px;  max-  border: 1px solid #E5E5E5; border-radius:40px;} }
+@media(max-width: 430px){ #rce_section_12_1{  display: grid; grid-template-columns: 40% auto; grid-gap: 40px;  max-  border: 1px solid #E5E5E5; border-radius:40px;} }
+@media(max-width: 2124px){ #rce_section_12_1_5{ width: 100%; height: 100%;} }
+@media(max-width: 2124px){ #rce_section_12_1_1{ font-size: 16px; line-height: 20px;text-align:left; font-family: 'Poppins'; color: #8F8F8F; font-weight:500;} }
+@media(max-width: 770px){ #rce_section_12_1_1{ font-size: 16px; line-height: 20px;text-align:left; font-family: 'Poppins'; color: #8F8F8F; font-weight:500;} }
+@media(max-width: 430px){ #rce_section_12_1_1{ font-size: 16px; line-height: 18px;text-align:left; font-family: 'Poppins'; color: #8F8F8F; font-weight:500;} }
+@media(max-width: 2124px){ #rce_section_12_1_2{ font-size: 30px; line-height: 40px;text-align:left; font-family: 'Poppins'; color: #1C1C1C; font-weight:600; } }
+@media(max-width: 770px){ #rce_section_12_1_2{ font-size: 24px; line-height: 28px;text-align:left; font-family: 'Poppins'; color: #1C1C1C; font-weight:600; } }
+@media(max-width: 430px){ #rce_section_12_1_2{ font-size: 24px; line-height: 28px;text-align:left; font-family: 'Poppins'; color: #1C1C1C; font-weight:600; } }
+@media(max-width: 2124px){ #rce_section_12_1_3{ background-color: rgba(14, 27, 77, 0.8); color: rgb(255, 255, 255); border: 1px solid rgba(14, 27, 77, 0.8); border-radius: 25px; padding: 10px 40px; margin-top: 20px; fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_12_1_3{ background-color: rgba(14, 27, 77, 0.8); color: rgb(255, 255, 255); border: 1px solid rgba(14, 27, 77, 0.8); border-radius: 25px;   fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_12_1_3{ background-color: rgba(14, 27, 77, 0.8); color: rgb(255, 255, 255); border: 1px solid rgba(14, 27, 77, 0.8); border-radius: 25px;   fill: rgb(0, 0, 0);} }
+@media(max-width: 2124px){ #rce_section_12_1_3:hover{ color: white; background-color:#0e1b4d; border-color:#0e1b4d;} }
+@media(max-width: 2124px){ #rce_section_12_4{ height: auto; display: grid; grid-template-columns: 40% auto; grid-gap: 40px; width: 100%; max-width: 600px; padding: 10px; border: 1px solid #E5E5E5; border-radius:40px;} }
+@media(max-width: 770px){ #rce_section_12_4{  display: grid; grid-template-columns: 40% auto; grid-gap: 40px;  max-  border: 1px solid #E5E5E5; border-radius:40px;} }
+@media(max-width: 430px){ #rce_section_12_4{  display: grid; grid-template-columns: 40% auto; grid-gap: 40px;  max-  border: 1px solid #E5E5E5; border-radius:40px;} }
+@media(max-width: 2124px){ #rce_section_12_4_5{ width: 100%; height: 100%; padding-top: 85px;} }
+@media(max-width: 770px){ #rce_section_12_4_5{   } }
+@media(max-width: 430px){ #rce_section_12_4_5{   } }
+@media(max-width: 2124px){ #rce_section_12_4_1{ font-size: 16px; line-height: 20px;text-align:left; font-family: 'Poppins'; color: #8F8F8F; font-weight:500;} }
+@media(max-width: 770px){ #rce_section_12_4_1{ font-size: 16px; line-height: 20px;text-align:left; font-family: 'Poppins'; color: #8F8F8F; font-weight:500;} }
+@media(max-width: 430px){ #rce_section_12_4_1{ font-size: 16px; line-height: 18px;text-align:left; font-family: 'Poppins'; color: #8F8F8F; font-weight:500;} }
+@media(max-width: 2124px){ #rce_section_12_4_2{ font-size: 30px; line-height: 40px;text-align:left; font-family: 'Poppins'; color: #1C1C1C; font-weight:600; } }
+@media(max-width: 770px){ #rce_section_12_4_2{ font-size: 24px; line-height: 28px;text-align:left; font-family: 'Poppins'; color: #1C1C1C; font-weight:600; } }
+@media(max-width: 430px){ #rce_section_12_4_2{ font-size: 24px; line-height: 28px;text-align:left; font-family: 'Poppins'; color: #1C1C1C; font-weight:600; } }
+@media(max-width: 2124px){ #rce_section_12_4_3{ background-color: rgba(14, 27, 77, 0.8); color: rgb(255, 255, 255); border: 1px solid rgba(14, 27, 77, 0.8); border-radius: 25px; padding: 10px 40px; margin-top: 20px; fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_12_4_3{ background-color: rgba(14, 27, 77, 0.8); color: rgb(255, 255, 255); border: 1px solid rgba(14, 27, 77, 0.8); border-radius: 25px;   fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_12_4_3{ background-color: rgba(14, 27, 77, 0.8); color: rgb(255, 255, 255); border: 1px solid rgba(14, 27, 77, 0.8); border-radius: 25px;   fill: rgb(0, 0, 0);} }
+@media(max-width: 2124px){ #rce_section_12_4_3:hover{ color: white; background-color:#0e1b4d; border-color:#0e1b4d;} }
+@media(max-width: 2124px){ #rce_section_12_5{ height: auto; display: grid; grid-template-columns: 40% auto; grid-gap: 40px; width: 100%; max-width: 600px; padding: 10px; border: 1px solid #E5E5E5; border-radius:40px;} }
+@media(max-width: 770px){ #rce_section_12_5{  display: grid; grid-template-columns: 40% auto; grid-gap: 40px;  max-  border: 1px solid #E5E5E5; border-radius:40px;} }
+@media(max-width: 430px){ #rce_section_12_5{  display: grid; grid-template-columns: 40% auto; grid-gap: 40px;  max-  border: 1px solid #E5E5E5; border-radius:40px;} }
+@media(max-width: 2124px){ #rce_section_12_5_1{ width: 100%; height: 100%;} }
+@media(max-width: 2124px){ #rce_section_12_5_2{ font-size: 16px; line-height: 20px;text-align:left; font-family: 'Poppins'; color: #8F8F8F; font-weight:500;} }
+@media(max-width: 770px){ #rce_section_12_5_2{ font-size: 16px; line-height: 20px;text-align:left; font-family: 'Poppins'; color: #8F8F8F; font-weight:500;} }
+@media(max-width: 430px){ #rce_section_12_5_2{ font-size: 16px; line-height: 18px;text-align:left; font-family: 'Poppins'; color: #8F8F8F; font-weight:500;} }
+@media(max-width: 2124px){ #rce_section_12_5_3{ font-size: 30px; line-height: 40px;text-align:left; font-family: 'Poppins'; color: #1C1C1C; font-weight:600; } }
+@media(max-width: 770px){ #rce_section_12_5_3{ font-size: 24px; line-height: 28px;text-align:left; font-family: 'Poppins'; color: #1C1C1C; font-weight:600; } }
+@media(max-width: 430px){ #rce_section_12_5_3{ font-size: 24px; line-height: 28px;text-align:left; font-family: 'Poppins'; color: #1C1C1C; font-weight:600; } }
+@media(max-width: 2124px){ #rce_section_12_5_4{ background-color: rgba(14, 27, 77, 0.8); color: rgb(255, 255, 255); border: 1px solid rgba(14, 27, 77, 0.8); border-radius: 25px; padding: 10px 40px; margin-top: 20px; fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_12_5_4{ background-color: rgba(14, 27, 77, 0.8); color: rgb(255, 255, 255); border: 1px solid rgba(14, 27, 77, 0.8); border-radius: 25px;   fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_12_5_4{ background-color: rgba(14, 27, 77, 0.8); color: rgb(255, 255, 255); border: 1px solid rgba(14, 27, 77, 0.8); border-radius: 25px;   fill: rgb(0, 0, 0);} }
+@media(max-width: 2124px){ #rce_section_12_5_4:hover{ color: white; background-color:#0e1b4d; border-color:#0e1b4d;} }
+@media(max-width: 2124px){ #rce_section_7{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); filter: unset;} }
+@media(max-width: 770px){ #rce_section_7{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); filter: unset;} }
+@media(max-width: 430px){ #rce_section_7{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); filter: unset;} }
+@media(max-width: 2124px){ #rce_section_7_6{ width:  100%;} }
+@media(max-width: 2124px){ #rce_section_7_1{ color:#8F8F8F; font-size: 18px; line-height: 24px; margin-bottom: 30px; font-family:'Poppins'; text-transform: uppercase;} }
+@media(max-width: 770px){ #rce_section_7_1{ color:#8F8F8F; font-size: 18px; line-  font-family:'Poppins'; text-transform: uppercase;} }
+@media(max-width: 430px){ #rce_section_7_1{ color:#8F8F8F; font-size: 18px; line-  font-family:'Poppins'; text-transform: uppercase;} }
+@media(max-width: 2124px){ #rce_section_7_2{ color:#1C1C1C; font-size: 42px; line-height: 52px; margin-bottom: 20px; font-family:'Poppins'; text-transform: capitalize; font-weight: bold; } }
+@media(max-width: 770px){ #rce_section_7_2{ color:#1C1C1C; font-size: 42px; line-  font-family:'Poppins'; text-transform: capitalize; font-weight: bold; } }
+@media(max-width: 430px){ #rce_section_7_2{ color:#1C1C1C; font-size: 42px; line-  font-family:'Poppins'; text-transform: capitalize; font-weight: bold; } }
+@media(max-width: 2124px){ #rce_section_7_3{ text-align: left; margin-top:40px;} }
+@media(max-width: 770px){ #rce_section_7_3{ text-align: left; } }
+@media(max-width: 430px){ #rce_section_7_3{ margin-top:30px; margin-bottom: 30px;} }
+@media(max-width: 2124px){ #rce_section_7_3_1{ background-color: rgb(255, 221, 169); color: rgb(28, 28, 28); font-size: 18px; padding: 0px 20px; height: 50px; width: 200px; border-radius: 25px; border-color: rgb(28, 28, 28); fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_7_3_1{ background-color: rgb(255, 221, 169); color: rgb(28, 28, 28); font-size: 18px;    border-radius: 25px; border-color: rgb(28, 28, 28); fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_7_3_1{ background-color: rgb(255, 221, 169); color: rgb(28, 28, 28); font-size: 18px; border-radius: 25px; border-color: rgb(28, 28, 28); fill: rgb(0, 0, 0);} }
+@media(max-width: 2124px){ #rce_section_7_3_1:hover{ background-color: rgb(255 205 128); color:#1C1C1C;} }
+@media(max-width: 430px){ #rce_section_7_3_1:hover{ background-color: rgb(255 205 128); color:#1C1C1C;} }
+@media(max-width: 2124px){ #rce_section_6{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); filter: unset;} }
+@media(max-width: 770px){ #rce_section_6{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); filter: unset;} }
+@media(max-width: 430px){ #rce_section_6{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); filter: unset;} }
+@media(max-width: 2124px){ #rce_section_6_1{ display: flex;align-items: flex-start;justify-content: center;flex-flow: column;padding: 20px;height: 100%;} }
+@media(max-width: 770px){ #rce_section_6_1{ display: flex;align-items: flex-start;justify-content: center;flex-flow: column;} }
+@media(max-width: 430px){ #rce_section_6_1{ display: flex;align-items: flex-start;justify-content: center;flex-flow: column;} }
+@media(max-width: 2124px){ #rce_section_6_1_1{ font-size: 48px; color: #3F3F3F; font-weight: bold; font-family: 'Poppins'; width: 100%; line-height:52px; margin-top: 20px; text-transform: capitalize;} }
+@media(max-width: 770px){ #rce_section_6_1_1{ font-size: 48px; color: #3F3F3F; font-weight: bold; font-family: 'Poppins';  line-  text-transform: capitalize;} }
+@media(max-width: 430px){ #rce_section_6_1_1{ font-size: 48px; color: #3F3F3F; font-weight: bold; font-family: 'Poppins';  line-  text-transform: capitalize;} }
+@media(max-width: 2124px){ #rce_section_6_1_3_1{ background-color: rgba(14, 27, 77, 0.8); color: rgb(255, 255, 255); font-size: 18px; padding: 0px 20px; border-radius: 25px; height: 50px; width: 200px; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_6_1_3_1{ background-color: rgba(14, 27, 77, 0.8); color: rgb(255, 255, 255); font-size: 18px; border-radius: 25px; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_6_1_3_1{ background-color: rgba(14, 27, 77, 0.8); color: rgb(255, 255, 255); font-size: 18px; border-radius: 25px; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0); padding-top: 0px;} }
+@media(max-width: 2124px){ #rce_section_6_1_3_1:hover{ background-color: #0e1b4d; color:white;} }
+@media(max-width: 770px){ #rce_section_6_1_3_1:hover{ background-color: #0e1b4d; color:white;} }
+@media(max-width: 430px){ #rce_section_6_1_3_1:hover{ background-color: #0e1b4d; color:white;} }
+@media(max-width: 2124px){ #rce_section_6_1_4{ width: 100%; height: 100%;} }
+@media(max-width: 430px){ #rce_section_6_1_4{ padding-top: 54px;} }
+@media(max-width: 2124px){ #rce_section_3{ background-image: linear-gradient(rgb(249, 249, 249), rgb(249, 249, 249)); filter: unset;} }
+@media(max-width: 770px){ #rce_section_3{ background-image: linear-gradient(rgb(249, 249, 249), rgb(249, 249, 249)); filter: unset;} }
+@media(max-width: 430px){ #rce_section_3{ background-image: linear-gradient(rgb(249, 249, 249), rgb(249, 249, 249)); filter: unset;} }
+@media(max-width: 2124px){ #rce_section_3_1{ font-size: 40px; margin-top: 20px; text-align: center; font-weight: 700; font-family: Poppins; filter: unset;} }
+@media(max-width: 770px){ #rce_section_3_1{ font-size: 40px;  text-align:center; font-weight: 700; font-family: 'Poppins';} }
+@media(max-width: 430px){ #rce_section_3_1{ font-size: 40px;  text-align:center; font-weight: 700; font-family: 'Poppins';} }
+@media(max-width: 2124px){ #rce_section_10{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); background-position: center top; padding-top: 60px; padding-bottom: 80px; filter: unset;} }
+@media(max-width: 770px){ #rce_section_10{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); background-position: center top;   filter: unset;} }
+@media(max-width: 430px){ #rce_section_10{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); background-position: center top;   filter: unset;} }
+@media(max-width: 2124px){ #rce_section_10_1{ border-radius: 20px; background-color:#0e1b4d; padding:40px;} }
+@media(max-width: 770px){ #rce_section_10_1{ border-radius: 20px; background-color: rgb(14, 27, 77); padding-bottom: 43px;} }
+@media(max-width: 430px){ #rce_section_10_1{ border-radius: 20px; background-color:#0e1b4d; } }
+@media(max-width: 2124px){ #rce_section_10_1_1{ color: white; font-size: 36px; text-align: center; line-height: 46px; margin-top: 20px; font-weight: bold; text-transform:capitalize} }
+@media(max-width: 770px){ #rce_section_10_1_1{ color: white; font-size: 36px; text-align: center; text-transform: capitalize; margin-top: 0px; height: 73px; padding-top: 15px; padding-bottom: 0px;} }
+@media(max-width: 430px){ #rce_section_10_1_1{ color: white; font-size: 36px; text-align: center; line-  font-weight: bold; text-transform:capitalize} }
+@media(max-width: 2124px){ #rce_section_10_3_1{ background-color: rgb(255, 221, 169); color: rgb(28, 28, 28); padding: 0px 20px; height: 50px; width: 240px; border-radius: 25px; border-color: rgb(28, 28, 28); fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_10_3_1{ background-color: rgb(255, 221, 169); color: rgb(28, 28, 28); border-radius: 25px; border-color: rgb(28, 28, 28); fill: rgb(0, 0, 0); padding-top: 0px; padding-bottom: 0px;} }
+@media(max-width: 430px){ #rce_section_10_3_1{ background-color: rgb(255, 221, 169); color: rgb(28, 28, 28);    border-radius: 25px; border-color: rgb(28, 28, 28); fill: rgb(0, 0, 0);} }
+@media(max-width: 2124px){ #rce_section_10_3_1:hover{ background-color: rgb(255 205 128); color:#1C1C1C;} }
+@media(max-width: 770px){ #rce_section_10_3_1:hover{ background-color: rgb(255 205 128); color:#1C1C1C;} }
+@media(max-width: 2124px){ #rce_section_1{ padding: 60px 0px; filter: unset; background-image: linear-gradient(rgba(14, 27, 77, 0.04), rgba(14, 27, 77, 0.04));} }
+@media(max-width: 770px){ #rce_section_1{  filter: unset; background-image: linear-gradient(rgba(14, 27, 77, 0.04), rgba(14, 27, 77, 0.04));} }
+@media(max-width: 430px){ #rce_section_1{  filter: unset; background-image: linear-gradient(rgba(14, 27, 77, 0.04), rgba(14, 27, 77, 0.04));} }
+@media(max-width: 2124px){ #rce_section_1_1{ font-size: 16px; line-height: 24px; color: #0e1b4d; font-family: 'Poppins'; width: auto; text-align: center; text-transform: capitalize;} }
+@media(max-width: 770px){ #rce_section_1_1{ font-size: 16px; line- color: #0e1b4d; font-family: 'Poppins';  text-align: center; text-transform: capitalize;} }
+@media(max-width: 430px){ #rce_section_1_1{ font-size: 16px; line- color: #0e1b4d; font-family: 'Poppins';  text-align: center; text-transform: capitalize;} }
+@media(max-width: 2124px){ #rce_section_1_2{ font-size: 36px; line-height: 58px; text-align:left; font-family: 'Poppins'; color: #001431; text-align: center; font-weight:bold; text-transform: capitalize;} }
+@media(max-width: 770px){ #rce_section_1_2{ font-size: 36px; line- text-align:left; font-family: 'Poppins'; color: #001431; text-align: center; font-weight:bold; text-transform: capitalize;} }
+@media(max-width: 430px){ #rce_section_1_2{ font-size: 36px; line- text-align:left; font-family: 'Poppins'; color: #001431; text-align: center; font-weight:bold; text-transform: capitalize;} }
+@media(max-width: 2124px){ #{ width: 60px; height: 60px;} }
+@media(max-width: 2124px){ #{ font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;} }
+@media(max-width: 770px){ #{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 430px){ #{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 2124px){ #{ font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;} }
+@media(max-width: 770px){ #{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 430px){ #{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 2124px){ #{ font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 770px){ #{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 430px){ #{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 2124px){ #{ width: 60px; height: 60px;} }
+@media(max-width: 2124px){ #{ font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;} }
+@media(max-width: 770px){ #{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 430px){ #{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 2124px){ #{ font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;} }
+@media(max-width: 770px){ #{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 430px){ #{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 2124px){ #{ font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 770px){ #{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 430px){ #{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 2124px){ #{ width: 60px; height: 60px;} }
+@media(max-width: 2124px){ #{ font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;} }
+@media(max-width: 770px){ #{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 430px){ #{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 2124px){ #{ font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;} }
+@media(max-width: 770px){ #{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 430px){ #{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 2124px){ #{ font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 770px){ #{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 430px){ #{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 2124px){ #rce_section_1_3_1_2{ width: 60px; height: 60px;} }
+@media(max-width: 2124px){ #rce_section_1_3_1_3{ font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;} }
+@media(max-width: 770px){ #rce_section_1_3_1_3{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 430px){ #rce_section_1_3_1_3{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 2124px){ #rce_section_1_3_1_4{ font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;} }
+@media(max-width: 770px){ #rce_section_1_3_1_4{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 430px){ #rce_section_1_3_1_4{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 2124px){ #rce_section_1_3_1_1{ font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 770px){ #rce_section_1_3_1_1{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 430px){ #rce_section_1_3_1_1{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 2124px){ #rce_section_1_01{ width:50px; height:50px; font-size: 50px;} }
+@media(max-width: 770px){ #rce_section_1_01{   font-size: 50px;} }
+@media(max-width: 430px){ #rce_section_1_01{   font-size: 50px;} }
+@media(max-width: 2124px){ #rce_section_1_3_2_2{ width: 60px; height: 60px;} }
+@media(max-width: 2124px){ #rce_section_1_3_2_3{ font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;} }
+@media(max-width: 770px){ #rce_section_1_3_2_3{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 430px){ #rce_section_1_3_2_3{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 2124px){ #rce_section_1_3_2_4{ font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;} }
+@media(max-width: 770px){ #rce_section_1_3_2_4{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 430px){ #rce_section_1_3_2_4{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 2124px){ #rce_section_1_3_2_1{ font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 770px){ #rce_section_1_3_2_1{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 430px){ #rce_section_1_3_2_1{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 2124px){ #rce_section_1_3_3_2{ width: 60px; height: 60px;} }
+@media(max-width: 2124px){ #rce_section_1_3_3_3{ font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;} }
+@media(max-width: 770px){ #rce_section_1_3_3_3{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 430px){ #rce_section_1_3_3_3{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 2124px){ #rce_section_1_3_3_4{ font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;} }
+@media(max-width: 770px){ #rce_section_1_3_3_4{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 430px){ #rce_section_1_3_3_4{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 2124px){ #rce_section_1_3_3_1{ font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 770px){ #rce_section_1_3_3_1{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 430px){ #rce_section_1_3_3_1{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 2124px){ #rce_section_1_3_4_2{ width: 60px; height: 60px;} }
+@media(max-width: 2124px){ #rce_section_1_3_4_3{ font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;} }
+@media(max-width: 770px){ #rce_section_1_3_4_3{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 430px){ #rce_section_1_3_4_3{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 2124px){ #rce_section_1_3_4_4{ font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;} }
+@media(max-width: 770px){ #rce_section_1_3_4_4{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 430px){ #rce_section_1_3_4_4{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 2124px){ #rce_section_1_3_4_1{ font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 770px){ #rce_section_1_3_4_1{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 430px){ #rce_section_1_3_4_1{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 2124px){ #{ width: 60px; height: 60px;} }
+@media(max-width: 2124px){ #{ font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;} }
+@media(max-width: 770px){ #{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 430px){ #{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 2124px){ #{ font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;} }
+@media(max-width: 770px){ #{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 430px){ #{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 2124px){ #{ font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 770px){ #{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 430px){ #{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 2124px){ #{ width:50px; height:50px; font-size: 50px;} }
+@media(max-width: 770px){ #{   font-size: 50px;} }
+@media(max-width: 430px){ #{   font-size: 50px;} }
+@media(max-width: 2124px){ #{ width: 60px; height: 60px;} }
+@media(max-width: 2124px){ #{ font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;} }
+@media(max-width: 770px){ #{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 430px){ #{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 2124px){ #{ font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;} }
+@media(max-width: 770px){ #{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 430px){ #{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 2124px){ #{ font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 770px){ #{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 430px){ #{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 2124px){ #{ width: 60px; height: 60px;} }
+@media(max-width: 2124px){ #{ font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;} }
+@media(max-width: 770px){ #{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 430px){ #{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 2124px){ #{ font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;} }
+@media(max-width: 770px){ #{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 430px){ #{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 2124px){ #{ font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 770px){ #{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 430px){ #{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 2124px){ #{ width: 60px; height: 60px;} }
+@media(max-width: 2124px){ #{ font-size: 20px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; margin:0px auto;} }
+@media(max-width: 770px){ #{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 430px){ #{ font-size: 20px; line- text-align:center; font-family: 'Poppins'; color:#001431; font-weight: bold; } }
+@media(max-width: 2124px){ #{ font-size: 14px; line-height: 16px; text-align:center; font-family: 'Poppins'; color:#00459C; margin:0px auto;} }
+@media(max-width: 770px){ #{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 430px){ #{ font-size: 14px; line- text-align:center; font-family: 'Poppins'; color:#00459C; } }
+@media(max-width: 2124px){ #{ font-size: 16px; line-height: 24px; text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 770px){ #{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 430px){ #{ font-size: 16px; line- text-align:center; font-family: 'Poppins'; color:#423E57;} }
+@media(max-width: 2124px){ #rce_section_4{ background-image: linear-gradient(rgb(30, 40, 51), rgb(30, 40, 51)); filter: unset;} }
+@media(max-width: 770px){ #rce_section_4{ background-image: linear-gradient(rgb(30, 40, 51), rgb(30, 40, 51)); filter: unset;} }
+@media(max-width: 430px){ #rce_section_4{ background-image: linear-gradient(rgb(30, 40, 51), rgb(30, 40, 51)); filter: unset;} }
+@media(max-width: 2124px){ #rce_section_4_1{ color:#bababa; font-size: 16px; font-family: 'Poppins'; text-align: center; line-height:24px;} }
+@media(max-width: 770px){ #rce_section_4_1{ color:#bababa; font-size: 16px; font-family: 'Poppins'; text-align: center; line-} }
+@media(max-width: 430px){ #rce_section_4_1{ color:#bababa; font-size: 16px; font-family: 'Poppins'; text-align: center; line-} }
+@media(max-width: 2124px){ #rce_section_4_2{ color: white; font-size: 16px; font-family: 'Poppins'; text-align: center; margin-top: 30px;  line-height: 1.6;} }
+@media(max-width: 770px){ #rce_section_4_2{ color: white; font-size: 16px; font-family: 'Poppins'; text-align: center;   line-} }
+@media(max-width: 430px){ #rce_section_4_2{ font-size: 16px; line-height: 1.6; font-family: 'Poppins'; text-align: center; margin-top: 30px;} }
+@media(max-width: 2124px){ #rce_section_4_3{ color: rgb(30, 40, 51); background-color: rgb(255, 255, 255); width: 200px; min-height: 50px; border: 1px solid rgb(30, 40, 51); font-size: 16px; fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_4_3{ color: rgb(30, 40, 51); background-color: rgb(255, 255, 255);  min- border: 1px solid rgb(30, 40, 51); font-size: 16px; fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_4_3{ color: rgb(30, 40, 51); background-color: rgb(255, 255, 255);  min- border: 1px solid rgb(30, 40, 51); font-size: 16px; fill: rgb(0, 0, 0);} }
+@media(max-width: 2124px){ #rce_section_4_3:hover{ background-color:#e7e7e7;border-color:#1E2833;color:#1E2833;} }
+@media(max-width: 2124px){ #rce_section_4_8{ display: flex; align-items: center; justify-content: center; grid-gap:40px; margin: 20px 0; } }
+@media(max-width: 770px){ #rce_section_4_8{ display: flex; align-items: center; justify-content: center; grid-gap:40px;  } }
+@media(max-width: 430px){ #rce_section_4_8{ display: flex; align-items: center; justify-content: center; grid-gap:10px; margin:30px 0 20px; flex-flow: wrap;} }
+@media(max-width: 2124px){ #rce_section_4_3_1{ font-size: 14px; text-align: left; color: rgb(255, 255, 255); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_4_3_1{ font-size: 14px; text-align: left; color: rgb(255, 255, 255); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_4_3_1{ font-size: 14px; text-align: left; color: rgb(255, 255, 255); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);} }
+@media(max-width: 2124px){ #rce_section_4_3_1:hover{ background-color:rgba(0, 0, 0, 0);border-color:rgb(255, 255, 255);color:rgb(255, 255, 255);} }
+@media(max-width: 2124px){ #rce_section_4_3_3{ font-size: 14px; text-align: left; color: rgb(255, 255, 255); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_4_3_3{ font-size: 14px; text-align: left; color: rgb(255, 255, 255); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_4_3_3{ font-size: 14px; text-align: left; color: rgb(255, 255, 255); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);} }
+@media(max-width: 2124px){ #rce_section_4_3_3:hover{ background-color:rgba(0, 0, 0, 0);border-color:rgb(255, 255, 255);color:rgb(255, 255, 255);} }
+@media(max-width: 2124px){ #rce_section_4_3_4{ font-size: 14px; text-align: left; color: rgb(255, 255, 255); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_4_3_4{ font-size: 14px; text-align: left; color: rgb(255, 255, 255); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_4_3_4{ font-size: 14px; text-align: left; color: rgb(255, 255, 255); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);} }
+@media(max-width: 2124px){ #rce_section_4_3_4:hover{ background-color:rgba(0, 0, 0, 0);border-color:rgb(255, 255, 255);color:rgb(255, 255, 255);} }
+@media(max-width: 2124px){ #rce_section_4_6{ font-size: 14px; text-align:center; color: #bababa; font-family: 'Poppins';} }
+@media(max-width: 770px){ #rce_section_4_6{ font-size: 14px; text-align:center; color: #bababa; font-family: 'Poppins';} }
+@media(max-width: 430px){ #rce_section_4_6{ font-size: 14px; text-align:center; color: #bababa; font-family: 'Poppins';} }
+#rce_section_5{background-image: linear-gradient(#ffffff, #ffffff);}@media(max-width: 770px){#rce_section_5{ background-image: linear-gradient(#ffffff, #ffffff);}}@media(max-width: 430px){#rce_section_5{ background-image: linear-gradient(#ffffff, #ffffff); }}#rce_section_2{background-image: linear-gradient(#0e1b4d, #0e1b4d);}@media(max-width: 770px){#rce_section_2{ background-image: linear-gradient(#0e1b4d, #0e1b4d);}}@media(max-width: 430px){#rce_section_2{ background-image: linear-gradient(#0e1b4d, #0e1b4d); }}#rce_section_8{background-image: linear-gradient(#ffffff00, #ffffff00), url("https://marketingblocks.s3.amazonaws.com/public/upload/Website-banner.png");}@media(max-width: 770px){#rce_section_8{ background-image: linear-gradient(#ffffff00, #ffffff00), url("https://marketingblocks.s3.amazonaws.com/public/upload/Website-banner.png");}}@media(max-width: 430px){#rce_section_8{ background-image: linear-gradient(#ffffff00, #ffffff00), url("https://marketingblocks.s3.amazonaws.com/public/upload/Website-banner.png"); }}#rce_section_12{background-image: linear-gradient(rgb(255,255,255), rgb(255,255,255));}@media(max-width: 770px){#rce_section_12{ background-image: linear-gradient(rgb(255,255,255), rgb(255,255,255));}}@media(max-width: 430px){#rce_section_12{ background-image: linear-gradient(rgb(255,255,255), rgb(255,255,255)); }}#rce_section_7{background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));}@media(max-width: 770px){#rce_section_7{ background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));}}@media(max-width: 430px){#rce_section_7{ background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)); }}#rce_section_6{background-image: linear-gradient(rgb(255,255,255), rgb(255,255,255));}@media(max-width: 770px){#rce_section_6{ background-image: linear-gradient(rgb(255,255,255), rgb(255,255,255));}}@media(max-width: 430px){#rce_section_6{ background-image: linear-gradient(rgb(255,255,255), rgb(255,255,255)); }}#rce_section_3{background-image: linear-gradient(#F9F9F9, #F9F9F9);}@media(max-width: 770px){#rce_section_3{ background-image: linear-gradient(#F9F9F9, #F9F9F9);}}@media(max-width: 430px){#rce_section_3{ background-image: linear-gradient(#F9F9F9, #F9F9F9); }}#rce_section_10{background-image: linear-gradient(#ffffff, #ffffff);}@media(max-width: 770px){#rce_section_10{ background-image: linear-gradient(#ffffff, #ffffff);}}@media(max-width: 430px){#rce_section_10{ background-image: linear-gradient(#ffffff, #ffffff); }}#rce_section_1{background-image: linear-gradient(#0e1b4d0a, #0e1b4d0a);}@media(max-width: 770px){#rce_section_1{ background-image: linear-gradient(#0e1b4d0a, #0e1b4d0a);}}@media(max-width: 430px){#rce_section_1{ background-image: linear-gradient(#0e1b4d0a, #0e1b4d0a); }}#rce_section_4{background-image: linear-gradient(#1E2833, #1E2833);}@media(max-width: 770px){#rce_section_4{ background-image: linear-gradient(#1E2833, #1E2833);}}@media(max-width: 430px){#rce_section_4{ background-image: linear-gradient(#1E2833, #1E2833); }}
+</style>	
+<input type="hidden" name="" id="page_id" value="33922">
+	
+<div class="rc-modal" id="custom_action_modal">
+		
+<div class="rc-loading-overlay-wrap">
+</div>
+		
+<div class="rc-modal-header">
+			
+<div class="rc-modal-header-title" id="rce_custom_action_title">Add Giveaway Reward 
+<span class="action-preview-point">+3
+</span>
+</div>
+			
+<div class="" style="text-align: center; font-size: 14px; margin-top: 10px;" id="custom_action_preview_desc">
+</div>
+			
+<div class="rc-modal-close">
+<i class="fa fa-times">
+</i>
+</div>
+		
+</div>
+		
+<div class="rc-modal-content">
+			
+<div class="rc-flex" style="padding-bottom: 10px;">
+				
+<div class="rc-flex rc-circle-number">
+					1
+				
+</div>	
+			
+</div>
+			
+			
+<div class="rc-flex" style="height: 60px;" id="rce_custom_action_btn">
+				 
+			
+</div>
+			
+<div class="rc-preview-desc">
+				Click to visit a special site to prepare your answer.
+			
+</div>
+			
+<div class="rc-flex" style="height: 100px; font-size: 35px; color: #46a27a; ">
+				
+<i class="fa fa-long-arrow-down">
+</i>
+			
+</div>
+			
+<div class="rc-flex" style="padding-bottom: 10px;">
+				
+<div class="rc-flex rc-circle-number">
+					2
+				
+</div>	
+			
+</div>
+			
+<div class="rc-flex" id="rce_action_question" style="font-size: 16px; font-weight: bold;">
+				What is your name?
+			
+</div>
+			
+<div class="rc-flex" id="rce_action_answer_wrap">
+				 
+			
+</div>
+			
+<div class="rc-preview-desc">
+				Please answer the above question to get points.
+			
+</div>
+		
+</div>
+	
+</div> 
+
+	
+<div class="rce-checkout-wrap" style="display:none;">
+		
+<div class="rce-checkout-window">
+			
+<div class="rce-checkout-close-btn">
+				
+<i class="fa fa-times">
+</i>
+			
+</div>
+			
+<div class="row">
+				
+<form target="_blank" name="rce_payment_form"  method="post"  id="rce_payment_form" action="https://app.marketingblocks.ai/payment/payPaypal">
+
+				
+<div class="col-md-12">
+					
+<div class="rce-grid rce-grid-2" style="border-bottom:1px solid #ccc; padding-bottom: 10px; grid-template-columns:repeat(2, 1fr) !important;">
+						
+<div class="rce-flex-start" style="font-size:32px; width:100%; font-weight:bold;">
+							My Cart
+						
+</div>
+						
+<div class="rce-flex-end">
+							
+<div class="btn rc-btn-success" id="empty_cart">Empty Cart
+</div>
+						
+</div>
+					
+</div>
+				
+</div>
+				
+				
+<div class="col-md-12">
+					
+<div class="rce-cart-product-window">
+						 
+					
+</div>
+					
+<div style="display: grid; grid-template-columns:repeat(2, 1fr);">
+						
+<div class="rce-flex-start" style="font-size: 20px; font-weight: bold; padding: 10px;">Total
+</div>
+						
+<div class="rce-flex-end rce-cart-product-total">
+							$123123
+						
+</div>
+					
+</div>
+					
+<div class="rce-flex-end mt-4">
+						
+<button type="button" class="btn  rc-btn-success" style="width:180px;" id="cart_pay_btn"> Pay Now 
+</button>
+					
+</div>
+				
+</div>
+				
+</form>
+			
+</div>
+		
+</div>
+	
+</div>
+	
+<form method="post" action="https://app.marketingblocks.ai/payment/checkout" id="checkout_form" style="display: none;">
+        
+<input type="hidden" name="_token" value="YNuQqTJz4YeorQ8CTSYVfszF45Ry34dgyC3dhmf4">        
+<input type="hidden" name="user_id" value="45916">
+        
+<input type="hidden" name="page_id" value="33922">
+        
+<input type="hidden" name="product_infos" id="product_infos">
+        
+<input type="hidden" name="cart_check" id="cart_check">
+	
+</form>
+	
+<div class="rce-cart-btn-wrap" style="display:none;">
+		
+<svg   viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+		
+<path d="M17.8393 3.9878C17.7565 3.86817 17.646 3.77038 17.5172 3.70283C17.3883 3.63527 17.245 3.59996 17.0995 3.59991H4.79957L3.761 1.10697C3.62482 0.778683 3.39423 0.49822 3.09846 0.301146C2.80269 0.104071 2.45506 -0.000738916 2.09964 3.92141e-06H0V1.79996H2.09964L6.36913 12.0462C6.43752 12.2101 6.55289 12.3502 6.7007 12.4486C6.84852 12.5471 7.02218 12.5997 7.19981 12.5997H14.3996C14.7749 12.5997 15.1106 12.3666 15.2429 12.0165L17.9428 4.81668C17.9939 4.68044 18.0111 4.53386 17.9931 4.3895C17.975 4.24514 17.9223 4.10731 17.8393 3.9878Z" fill="#ffffff"/>
+		
+<path d="M7.64977 16.1999C8.39533 16.1999 8.99973 15.5955 8.99973 14.85C8.99973 14.1044 8.39533 13.5 7.64977 13.5C6.9042 13.5 6.2998 14.1044 6.2998 14.85C6.2998 15.5955 6.9042 16.1999 7.64977 16.1999Z" fill="#ffffff"/>
+		
+<path d="M13.9496 16.1999C14.6951 16.1999 15.2995 15.5955 15.2995 14.85C15.2995 14.1044 14.6951 13.5 13.9496 13.5C13.204 13.5 12.5996 14.1044 12.5996 14.85C12.5996 15.5955 13.204 16.1999 13.9496 16.1999Z" fill="#ffffff"/>
+		
+</svg>
+		
+<div class="rce-cart-item-count">0
+</div>
+	
+</div>
+	
+	
+<div class="rce-video-preview-wrap" style="display: none;">
+		
+<div class="rce-video-preview-content" style="position:relative; ">
+			
+<iframe src="" class="rce-video-preview">
+</iframe>
+			
+<div class="rce-video-preview-close">
+				
+<i class="fa fa-times">
+</i>
+			
+</div>
+		
+</div>
+	
+</div>
+	
+
+    
+</body>
+
+<footer class="rc-main-footer">
+     
+</footer> 
+
+</body>
+
+
+<script type="text/javascript">
+    var asset_url = "https://app.marketingblocks.ai/";
+    var vid = document.getElementById("rc_preview_video");
+    var _token = "YNuQqTJz4YeorQ8CTSYVfszF45Ry34dgyC3dhmf4";
+    var asw_url = "/";
+
+    const inViewport = (entries, observer) => {
+        entries.forEach(entry => {
+            entry.target.classList.toggle("go", entry.isIntersecting);
+        });
+    };
+    const Obs = new IntersectionObserver(inViewport);
+    const obsOptions = {}; 
+    const ELs_inViewport = document.querySelectorAll('[data-animation_css]');
+    ELs_inViewport.forEach(EL => {
+      Obs.observe(EL, obsOptions);
+    });
+
+</script>
+
+</html>
